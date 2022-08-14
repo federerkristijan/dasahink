@@ -1,5 +1,6 @@
-import * as React from " react";
+import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import { Home, About, Art, Domination, Film, Music } from "./views/";
 import './App.css';
 
 function App() {
