@@ -1,6 +1,13 @@
 import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { Home, About, Art, Domination, Film, Music } from "./views/";
+// import { Home, About, Art, Domination, Film, Music } from "./views/";
+
+import Home from "./views/Home";
+import About from "./views/About";
+import Art from "./views/Art";
+import Domination from "./views/Domination";
+import Film from "./views/About";
+import Music from "./views/About";
 import './App.css';
 
 function App() {
