@@ -1,6 +1,7 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
-// import { Home, About, Art, Domination, Film, Music } from "./views/";
+import useContentful from "../useContentful";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -14,6 +15,13 @@ import Music from "./views/About";
 import './App.css';
 
 function App() {
+  const [data, setData] = useState([]);
+  const { getData } = useContentful();
+
+  useEffect(() => {
+    getData().then((response) => setData(response))
+  });
+
   return (
     <div className="App">
       <Routes>
