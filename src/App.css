@@ -5,6 +5,15 @@
 .App > .navbar {
   display: flex;
   justify-content: space-between;
-  border: 2px solid red;
+  margin: 2rem 1.5rem;
+  /* border: 2px solid red; */
+}
 
+.navbar .navbar-collapse {
+  flex-grow: initial;
+}
+
+.navbar .me-auto {
+  gap: 3rem;
+  /* border: 2px solid green; */
 }
