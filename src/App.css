@@ -14,6 +14,15 @@
 }
 
 .navbar .me-auto {
-  gap: 3rem;
+  gap: 2rem;
   /* border: 2px solid green; */
+}
+
+.navbar .dropdown {
+  margin-left: 6rem;
+}
+
+.navbar .cart {
+  position: relative;
+  float: right;
 }
