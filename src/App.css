@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+/* Navbar */
 .App > .navbar {
   display: flex;
   justify-content: space-between;
@@ -25,4 +26,23 @@
 .navbar .cart {
   position: relative;
   float: right;
+}
+
+/* Home */
+.App > .home {
+  border: 1px solid red;
+  margin: 7rem;
+}
+
+.home .card {
+  display: flex;
+  border: 2px solid blue;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.home img {
+  height: 65vh;
+  width: 20vw;
 }
