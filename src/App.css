@@ -5,6 +5,24 @@
 .App > .navbar {
   display: flex;
   justify-content: space-between;
-  border: 2px solid red;
+  margin: 2rem 1.5rem;
+  /* border: 2px solid red; */
+}
 
+.navbar .navbar-collapse {
+  flex-grow: initial;
+}
+
+.navbar .me-auto {
+  gap: 2rem;
+  /* border: 2px solid green; */
+}
+
+.navbar .dropdown {
+  margin-left: 6rem;
+}
+
+.navbar .cart {
+  position: relative;
+  float: right;
 }
