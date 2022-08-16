@@ -13,10 +13,10 @@ const Home = () => {
           />
         </div>
         <div className="text">
-          <div className="card-title" id="cardTitle">
+          <div className="card-title">
             <h1>Title</h1>
           </div>
-          <div className="description" id="cardDescription">Description</div>
+          <div className="description">Description</div>
         </div>
       </div>
       <div className="subscribe">
