@@ -28,14 +28,14 @@
   float: right;
 }
 
-/* Home */
-.App > .home {
+/* Wrappers */
+.App > .home, .art {
   border: 1px solid red;
   margin: 7rem;
 }
 
-/* Card */
-.home .card {
+/* Cards */
+.home-card, .art-card {
   display: flex;
   border: 2px solid blue;
   justify-content: space-evenly;
@@ -44,14 +44,14 @@
   margin: 2rem 7rem;
 }
 
-.home img {
+.home-image > img, .art-image {
   height: 65vh;
   width: 20vw;
 
 }
 
-/* Subscribre */
-.home .subscribe {
+/* Home - Subscribre */
+.home .home-subscribe {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,9 +62,15 @@
   width: 30vw;
 }
 
-/* Insta */
-.home .insta {
+/* Home - Insta */
+.home .home-insta {
   height: 40vh;
   width: 100%;
   border: 1px solid green;
+}
+
+.insta-card {
+  display: flex;
+  
+  border: 3px solid yellow;
 }
