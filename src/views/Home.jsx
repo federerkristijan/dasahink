@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-card">
-        <div className="home-img">
+        <div className="home-image">
           <img
             src="https://images.squarespace-cdn.com/content/v1/5972489ff7e0ab52f5a63107/1584001616265-906OPLNYWFUPJSTCP7PB/finished+2.jpg?format=750w"
             alt="home pic"

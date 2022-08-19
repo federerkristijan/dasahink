@@ -34,8 +34,8 @@
   margin: 7rem;
 }
 
-/* Home - Card */
-.home .card {
+/* Cards */
+.home-card, .art-card {
   display: flex;
   border: 2px solid blue;
   justify-content: space-evenly;
@@ -44,14 +44,14 @@
   margin: 2rem 7rem;
 }
 
-.home img {
+.home-image > img, .art-image {
   height: 65vh;
   width: 20vw;
 
 }
 
 /* Home - Subscribre */
-.home .subscribe {
+.home .home-subscribe {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,11 +67,4 @@
   height: 40vh;
   width: 100%;
   border: 1px solid green;
-}
-
-/* Art */
-.art-card {
-  display: flex;
-  border: 1px solid blue;
-  
 }
