@@ -3,7 +3,7 @@
 // const useContentful = () => {
 //   const client = createClient({
 //     spaceID: "uccluovdgwhe",
-//     accessToken: "ENfVDoltlnHcZ9m0SmClqVyrVQ60_QmDkB-fhhOIduI",
+//     accessToken: "",
 //     // for deliver instead of preview comes cdn
 //     host: "preview.contentful.com",
 //   });
