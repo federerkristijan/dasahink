@@ -2,7 +2,7 @@ import React from 'react'
 
 const Art = () => {
   return (
-    <div>
+    <div className='art'>
       <div className="art-card">
         <div className="art-image">image</div>
         <div className="art-text">

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
 // import useContentful from "./useContentful";
 
@@ -11,7 +11,7 @@ import Art from "./views/Art";
 import Domination from "./views/Domination";
 import Film from "./views/About";
 import Music from "./views/About";
-import DataCard from "./DataCard";
+// import DataCard from "./DataCard";
 
 import './App.css';
 

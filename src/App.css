@@ -28,13 +28,13 @@
   float: right;
 }
 
-/* Home */
-.App > .home {
+/* Wrappers */
+.App > .home, .art {
   border: 1px solid red;
   margin: 7rem;
 }
 
-/* Card */
+/* Home - Card */
 .home .card {
   display: flex;
   border: 2px solid blue;
@@ -50,7 +50,7 @@
 
 }
 
-/* Subscribre */
+/* Home - Subscribre */
 .home .subscribe {
   display: flex;
   justify-content: center;
@@ -62,9 +62,16 @@
   width: 30vw;
 }
 
-/* Insta */
+/* Home - Insta */
 .home .insta {
   height: 40vh;
   width: 100%;
   border: 1px solid green;
+}
+
+/* Art */
+.art-card {
+  display: flex;
+  border: 1px solid blue;
+  
 }
