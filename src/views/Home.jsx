@@ -34,7 +34,10 @@ const Home = () => {
         <div className="insta-title">
           <h3>my Insta stories is where its all at. join join me there</h3>
         </div>
-        <div className="insta-pics">Pics come here</div>
+        <div className="insta-card">
+          <div className="insta-pics">{/* <img src="/" alt="/"/> */}</div>
+          <div className="insta-desc">Text comes here</div>
+        </div>
       </div>
     </div>
   );
