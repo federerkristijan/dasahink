@@ -63,8 +63,14 @@
 }
 
 /* Home - Insta */
-.home .insta {
+.home .home-insta {
   height: 40vh;
   width: 100%;
   border: 1px solid green;
+}
+
+.insta-card {
+  display: flex;
+  
+  border: 3px solid yellow;
 }
