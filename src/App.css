@@ -29,7 +29,7 @@
 }
 
 /* Wrappers */
-.App > .home, .art {
+.App > .home, .art, .film {
   border: 1px solid red;
   margin: 7rem;
 }
@@ -71,6 +71,16 @@
 
 .insta-card {
   display: flex;
-  
+
   border: 3px solid yellow;
+}
+
+/* Film card */
+.film-card {
+  display: flex;
+  border: 2px solid blue;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 7rem;
 }
