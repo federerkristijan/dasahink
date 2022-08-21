@@ -9,12 +9,13 @@ function BasicExample() {
   return (
     <Navbar bg="light" expand="lg">
       <Container className="navbar-container">
-        <Navbar.Brand href="#home">Dasa Hink</Navbar.Brand>
+        <Navbar.Brand href="home">Dasa Hink</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="about">About</Nav.Link>
             <Nav.Link href="art">Art</Nav.Link>
+            <Nav.Link href="blog">Blog</Nav.Link>
             <Nav.Link href="domination">Domination</Nav.Link>
             <Nav.Link href="film">Film</Nav.Link>
             <Nav.Link href="music">Music</Nav.Link>
