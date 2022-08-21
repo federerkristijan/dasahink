@@ -31,7 +31,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="Art" element={<Art />} />
           <Route path="domination" element={<Domination />} />
-          <Route path="dilm" element={<Film />} />
+          <Route path="Film" element={<Film />} />
           <Route path="music" element={<Music />} />
         </Route>
       </Routes>
