@@ -9,8 +9,8 @@ import Home from "./views/Home";
 import About from "./views/About";
 import Art from "./views/Art";
 import Domination from "./views/Domination";
-import Film from "./views/About";
-import Music from "./views/About";
+import Film from "./views/Film";
+import Music from "./views/Music";
 // import DataCard from "./DataCard";
 
 import './App.css';
