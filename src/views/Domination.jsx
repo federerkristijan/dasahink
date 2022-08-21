@@ -11,13 +11,13 @@ const Domination = () => {
           src="https://images.squarespace-cdn.com/content/v1/5972489ff7e0ab52f5a63107/1584178415189-CF2R4FXLYH3C1XI2NR30/final-0434+crop.jpeg?format=750w"
           alt="cover-pic"
         />
-      </div>
-      <div className="subscribe">
         <div className="subscribe-title">
-          <h3>Subscripe to my Kink mailing list</h3>
+          <h1>Subscripe to my Kink mailing list</h1>
           <br />
           <p>if you want to get informed about talks, writings, and events!</p>
         </div>
+      </div>
+      <div className="subscribe">
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -46,7 +46,7 @@ const Domination = () => {
             <h5>View On AirbnbExplore the world of Kink with a pro</h5>
           </a>
         </div>
-        <a href={<Blog />} >Check out more over here in my blog</a>
+        <a href="blog">Check out more over here in my blog</a>
       </div>
     </div>
   );
