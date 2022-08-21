@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import Blog from "./Blog";
 
 const Domination = () => {
   return (
@@ -46,6 +46,7 @@ const Domination = () => {
             <h5>View On AirbnbExplore the world of Kink with a pro</h5>
           </a>
         </div>
+        <a href={<Blog />} >Check out more over here in my blog</a>
       </div>
     </div>
   );
