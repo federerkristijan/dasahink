@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./views/Home";
 import About from "./views/About";
 import Art from "./views/Art";
+import Blog from "./views/Blog";
 import Domination from "./views/Domination";
 import Film from "./views/Film";
 import Music from "./views/Music";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="Art" element={<Art />} />
+          <Route path="Blog" element={<Blog />} />
           <Route path="domination" element={<Domination />} />
           <Route path="Film" element={<Film />} />
           <Route path="music" element={<Music />} />

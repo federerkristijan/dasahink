@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Navbar */
 .App > .navbar {
   display: flex;
@@ -29,13 +33,17 @@
 }
 
 /* Wrappers */
-.App > .home, .art, .film {
+.App > .home,
+.art,
+.film {
   border: 1px solid red;
   margin: 7rem;
 }
 
 /* Cards */
-.home-card, .art-card {
+.home-card,
+.art-card,
+.domination-card {
   display: flex;
   border: 2px solid blue;
   justify-content: space-evenly;
@@ -44,21 +52,21 @@
   margin: 2rem 7rem;
 }
 
-.home-image > img, .art-image {
+.home-image > img,
+.art-image {
   height: 65vh;
   width: 20vw;
-
 }
 
-/* Home - Subscribre */
-.home .home-subscribe {
+/* Subscribre */
+.subscribe {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem 0;
 }
 
-.home .mb-3 {
+.mb-3 {
   width: 30vw;
 }
 
@@ -83,4 +91,25 @@
   align-items: center;
   flex-direction: column;
   margin: 2rem 7rem;
+}
+
+/* Domination */
+
+.subscribe-title {
+  display: flex;
+  border: 1px solid red;
+  background: white;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  float: right;
+  overflow: visible;
+  right: 10rem;
+  top: 10rem;
+}
+
+.domination-cover-image > img {
+  height: 75vh;
+  width: 35vw;
 }

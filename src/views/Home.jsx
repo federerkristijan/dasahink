@@ -19,7 +19,7 @@ const Home = () => {
           <div className="home-description">Description</div>
         </div>
       </div>
-      <div className="home-subscribe">
+      <div className="subscribe">
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
