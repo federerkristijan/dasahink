@@ -12,17 +12,10 @@ import Blog from "./views/Blog";
 import Domination from "./views/Domination";
 import Film from "./views/Film";
 import Music from "./views/Music";
-// import DataCard from "./DataCard";
 
 import './App.css';
 
 function App() {
-  // const [data, setData] = useState([]);
-  // const { getData } = useContentful();
-
-  // useEffect(() => {
-  //   getData().then((response) => setData(response))
-  // });
 
   return (
     <div className="App">
@@ -37,9 +30,6 @@ function App() {
           <Route path="music" element={<Music />} />
         </Route>
       </Routes>
-      {/* {
-        data.map((data, index) => <DataCard key={index} data={data} />)
-      } */}
     </div>
   );
 
