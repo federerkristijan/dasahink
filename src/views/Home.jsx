@@ -14,9 +14,20 @@ const Home = () => {
         </div>
         <div className="home-text">
           <div className="home-title">
-            <h1>Title</h1>
+            <h1>Hey babies</h1>
           </div>
-          <div className="home-description">Description</div>
+          <div className="home-description">
+            <p>
+              So nice of you to come for a visit.
+              This is the home of Katherine
+              Rixdorf (me), a professional dominatrix and public speaker. Aslo,
+              its home to Dasa Hink (also me) who is a film maker, artist and
+              musician. I’ve collected some art and writing for you to enjoy,
+              plus some more info about me and some stuff im up to. Please do
+              follow me on instagram or register for the mailing list to get
+              info about concerts, BDSM tours, or other shenanigans I’m up to.
+            </p>
+          </div>
         </div>
       </div>
       <div className="subscribe">
