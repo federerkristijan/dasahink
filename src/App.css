@@ -38,6 +38,16 @@ p {
   float: right;
 }
 
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid blue;
+  padding: 2rem;
+}
+
 /* Wrappers */
 .App > .home,
 .art,
