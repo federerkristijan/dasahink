@@ -40,7 +40,7 @@ a {
   margin: 7rem;
 }
 
-/* Cards */
+/* Row Cards */
 .home-card,
 .art-card,
 .domination-card {
@@ -83,7 +83,7 @@ a {
   border: 3px solid yellow;
 }
 
-/* Film card */
+/* Column cards */
 .film-card, .video-card {
   display: flex;
   border: 2px solid blue;
