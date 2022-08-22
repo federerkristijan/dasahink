@@ -13,35 +13,41 @@ import Domination from "./views/Domination";
 import Film from "./views/Film";
 import Music from "./views/Music";
 
-import './App.css';
+import "./App.css";
 
 function App() {
-
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<LayoutWithNavbar />} >
-          <Route path="/" element={<Home />} />
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main className="App">
+        <Routes>
+          <Route path="/" element={<Home />} >
           <Route path="about" element={<About />} />
           <Route path="Art" element={<Art />} />
           <Route path="Blog" element={<Blog />} />
           <Route path="domination" element={<Domination />} />
           <Route path="Film" element={<Film />} />
           <Route path="music" element={<Music />} />
-        </Route>
-      </Routes>
-    </div>
+          </Route>
+        </Routes>
+      </main>
+      <footer className="footer">
+        <Footer />
+      </footer>
+    </>
   );
 
-  function LayoutWithNavbar() {
-    return (
-      <>
-        <Navbar />
-        <Outlet />
-        <Footer />
-      </>
-    );
-  }
+  // function LayoutWithNavbar() {
+  //   return (
+  //     <>
+  //       <Navbar />
+  //       <Outlet />
+  //       <Footer />
+  //     </>
+  //   );
+  // }
 }
 
 export default App;
