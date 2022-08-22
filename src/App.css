@@ -6,6 +6,12 @@ a {
   text-decoration: none;
 }
 
+p {
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
+
 /* Navbar */
 .App > .navbar {
   display: flex;
@@ -35,12 +41,12 @@ a {
 /* Wrappers */
 .App > .home,
 .art,
-.film {
+.film, .music, .blog {
   border: 1px solid red;
   margin: 7rem;
 }
 
-/* Cards */
+/* Row Cards */
 .home-card,
 .art-card,
 .domination-card {
@@ -83,8 +89,8 @@ a {
   border: 3px solid yellow;
 }
 
-/* Film card */
-.film-card, .video-card {
+/* Column cards */
+.film-card, .video-card, .blog-card {
   display: flex;
   border: 2px solid blue;
   justify-content: space-evenly;
@@ -112,4 +118,9 @@ a {
 .domination-cover-image > img {
   height: 75vh;
   width: 35vw;
+}
+
+/* Blog */
+.b-text {
+  padding: 1rem;
 }
