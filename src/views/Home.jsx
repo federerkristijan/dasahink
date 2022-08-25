@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Insta from "../insta";
 
 const Home = () => {
   return (
@@ -47,7 +48,7 @@ const Home = () => {
           <h3>my Insta stories is where its all at. join join me there</h3>
         </div>
         <div className="insta-card">
-          <div className="insta-pics">{/* <img src="/" alt="/"/> */}</div>
+          <div className="insta-pics"><Insta /></div>
           <div className="insta-desc">Text comes here</div>
         </div>
       </div>
