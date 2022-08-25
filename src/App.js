@@ -1,7 +1,6 @@
 import * as React from "react";
 // import { useEffect, useState } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
-// import useContentful from "./useContentful";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -41,15 +40,15 @@ function App() {
     </>
   );
 
-  // function LayoutWithNavbar() {
-  //   return (
-  //     <>
-  //       <Navbar />
-  //       <Outlet />
-  //       <Footer />
-  //     </>
-  //   );
-  // }
+  function LayoutWithNavbar() {
+    return (
+      <>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default App;
