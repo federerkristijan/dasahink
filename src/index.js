@@ -3,6 +3,7 @@ import 'modern-css-reset';
 import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createRoot } from "react-dom/client"
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 // import { persistWithLocalStorage } from 'react-query/persist-localstorage-experimental';
@@ -20,7 +21,9 @@ const queryClient = new QueryClient({
 
 // persistWithLocalStorage(queryClient);
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>

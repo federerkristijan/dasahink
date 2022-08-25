@@ -23,7 +23,6 @@ const insta = {
       name: "slug",
       type: "slug",
       options: { source: "title" },
-      validation: (Rule) => Rule.required(),
     },
   ],
 };

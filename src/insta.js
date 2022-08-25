@@ -1,4 +1,4 @@
-// /src/MadLib.js
+// /src/insta.js
 import { useQuery } from 'react-query';
 import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -53,31 +53,6 @@ function Insta() {
         src={imageUrlBuilder.width(425).height(425).image(insta.image).url()}
       />
         </>
-      // ) : (
-      //   // if all the blanks are filled in, then we can show the rendered
-      //   // story with a custom serializer for the type `placeholder`
-      //   <>
-      //     <BlockContent
-      //       className={styles.blockContent}
-      //       blocks={madLib.story}
-      //       serializers={{
-      //         // see here: https://github.com/sanity-io/block-content-to-react
-      //         types: { placeholder: ({ node: { _key } }) => answers[_key] },
-      //       }}
-      //     />
-
-      //     <button
-      //       className={styles.button}
-      //       onClick={() => {
-      //         // we reset the state on click after the users confirms it's okay.
-      //         if (window.confirm('Are you sure you want to reset?')) {
-      //           setAnswers({});
-      //         }
-      //       }}
-      //     >
-      //       Reset
-      //     </button>
-
       //     {/* this is a simple link back to the main mab libs index */}
       //     <Link className={styles.button} to="/">
       //       ← More Mad Libs

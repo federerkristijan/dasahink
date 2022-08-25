@@ -1,7 +1,6 @@
 import * as React from "react";
 // import { useEffect, useState } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
-// import useContentful from "./useContentful";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -26,10 +25,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} >
           <Route path="about" element={<About />} />
-          <Route path="Art" element={<Art />} />
-          <Route path="Blog" element={<Blog />} />
+          <Route path="art" element={<Art />} />
+          <Route path="blog" element={<Blog />} />
           <Route path="domination" element={<Domination />} />
-          <Route path="Film" element={<Film />} />
+          <Route path="film" element={<Film />} />
           <Route path="music" element={<Music />} />
           <Route component={NotFound} />
           </Route>
@@ -41,15 +40,15 @@ function App() {
     </>
   );
 
-  // function LayoutWithNavbar() {
-  //   return (
-  //     <>
-  //       <Navbar />
-  //       <Outlet />
-  //       <Footer />
-  //     </>
-  //   );
-  // }
+  function LayoutWithNavbar() {
+    return (
+      <>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default App;

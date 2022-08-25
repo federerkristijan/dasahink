@@ -4,13 +4,12 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import BlockContent from '@sanity/block-content-to-react';
 import { sanity, imageUrlBuilder } from './sanity';
-import styles from './MadLib.module.css';
 
 const query = `
-  *[ _type == 'madLib' && slug.current == $slug ]
+  *[ _type == 'card' && slug.current == $slug ]
 `;
 
-function MadLib() {
+function Card() {
   // this variable is populated from `react-router` which pulls it from the URL
   const { slug } = useParams();
 
@@ -20,7 +19,7 @@ function MadLib() {
   const { data = [] } = useQuery(slug, () => sanity.fetch(query, { slug }));
 
   // we'll use destructuring assignment to return the first mab lib
-  const [madLib] = data;
+  const [Card] = data;
 
   // this will store the state of the answers of this mad lib
   const [answers, setAnswers] = useState(
@@ -39,13 +38,13 @@ function MadLib() {
     localStorage.setItem(slug, JSON.stringify(answers));
   }, [slug, answers]);
 
-  if (!madLib) {
+  if (!Card) {
     return <h1>Loading…</h1>;
   }
 
   // once the mad lib is loaded, we can map through the structured content to
   // find our placeholder shape. the end result is an array of these placeholders
-  const placeholders = madLib?.story
+  const placeholders = Card?.story
     .map((block) => block.children.filter((n) => n._type === 'placeholder'))
     .flat();
 
@@ -58,11 +57,11 @@ function MadLib() {
 
   return (
     <>
-      <h2 className={styles.title}>{madLib.title}</h2>
+      <h2 className={styles.title}>{Card.title}</h2>
       <img
         className={styles.img}
-        alt={madLib.title}
-        src={imageUrlBuilder.width(425).height(425).image(madLib.image).url()}
+        alt={Card.title}
+        src={imageUrlBuilder.width(425).height(425).image(Card.image).url()}
       />
       {!allBlanksFilledIn ? (
         // if all the blanks are _not_ filled in, then we can show the form
@@ -116,7 +115,7 @@ function MadLib() {
         <>
           <BlockContent
             className={styles.blockContent}
-            blocks={madLib.story}
+            blocks={Card.story}
             serializers={{
               // see here: https://github.com/sanity-io/block-content-to-react
               types: { placeholder: ({ node: { _key } }) => answers[_key] },
@@ -145,4 +144,4 @@ function MadLib() {
   );
 }
 
-export default MadLib;
+export default Card;
