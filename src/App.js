@@ -26,10 +26,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} >
           <Route path="about" element={<About />} />
-          <Route path="Art" element={<Art />} />
-          <Route path="Blog" element={<Blog />} />
+          <Route path="art" element={<Art />} />
+          <Route path="blog" element={<Blog />} />
           <Route path="domination" element={<Domination />} />
-          <Route path="Film" element={<Film />} />
+          <Route path="film" element={<Film />} />
           <Route path="music" element={<Music />} />
           <Route component={NotFound} />
           </Route>

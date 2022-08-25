@@ -49,7 +49,6 @@ const Home = () => {
         </div>
         <div className="insta-card">
           <div className="insta-pics"><Insta /></div>
-          <div className="insta-desc">Text comes here</div>
         </div>
       </div>
     </div>
