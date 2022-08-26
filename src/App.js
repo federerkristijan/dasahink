@@ -1,6 +1,6 @@
 import * as React from "react";
 // import { useEffect, useState } from "react";
-import { Routes, Route, Outlet, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -21,19 +21,19 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <Routes>
-        <main className="App">
-          <Route path="/" component={<Home />}>
-            <Route path="about" component={<About />} />
-            <Route path="art" component={<Art />} />
-            <Route path="blog" component={<Blog />} />
-            <Route path="domination" component={<Domination />} />
-            <Route path="film" component={<Film />} />
-            <Route path="music" component={<Music />} />
+      <main className="App">
+        <Routes>
+          <Route exact path="/" element={<Home />} >
+            <Route path="/about" element={<About />} />
+            <Route path="/art" element={<Art />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/domination" element={<Domination />} />
+            <Route path="/film" element={<Film />} />
+            <Route path="/music" element={<Music />} />
             <Route component={NotFound} />
           </Route>
-        </main>
-      </Routes>
+        </Routes>
+      </main>
       <footer className="footer">
         <Footer />
       </footer>
