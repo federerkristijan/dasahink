@@ -31,7 +31,6 @@ root.render(
       </BrowserRouter>
     </QueryClientProvider>
   </React.StrictMode>,
-  document.getElementById('root'),
 );
 
 // serviceWorkerRegistration.register();
