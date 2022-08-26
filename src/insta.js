@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { sanity, imageUrlBuilder } from './sanity';
 
 const query = `
-  *[ _type == 'insta' && slug.current == $slug ]
+  *[ _type == 'insta' ] { title, image, slug }
 `;
 
 function Insta() {

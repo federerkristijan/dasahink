@@ -6,7 +6,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import { sanity, imageUrlBuilder } from "./sanity";
 
 const query = `
-  *[ _type == 'card' && slug.current == $slug ]
+  *[ _type == 'card'] { title, description, image, slug }
 `;
 
 function Card() {
@@ -16,7 +16,7 @@ function Card() {
   // data is fetched from sanity via the sanity client and stored into
   // application state via react-query. note that the slug is used as the
   // "query key": https://react-query.tanstack.com/guides/query-keys
-  const { data = [] } = useQuery(slug, () => sanity.fetch(query, { slug }));
+  const { data = Card } = useQuery(slug, () => sanity.fetch(query, { slug }));
 
   // we'll use destructuring assignment to return the first mab lib
   const [Card] = data;
