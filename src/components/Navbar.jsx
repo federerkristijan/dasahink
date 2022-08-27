@@ -13,13 +13,13 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/about">About</Nav.Link>
+            {/* <Nav.Link href="about">About</Nav.Link> */}
             <Nav.Link href="/art">Art</Nav.Link>
             <Nav.Link href="/blog">Blog</Nav.Link>
             <Nav.Link href="/domination">Domination</Nav.Link>
             <Nav.Link href="/film">Film</Nav.Link>
             <Nav.Link href="/music">Music</Nav.Link>
-            <NavDropdown
+            {/* <NavDropdown
               title="Members Area"
               className="dropdown"
               id="basic-nav-dropdown"
@@ -29,7 +29,7 @@ function BasicExample() {
               <NavDropdown.Item href="action/3.3">Courses</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="action/3.4">Logout</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
         {/* removing the cart for the memebers area and inside is the cart? */}
