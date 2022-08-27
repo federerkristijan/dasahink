@@ -19,7 +19,7 @@ const card = {
     {
       title: "Image",
       name: "image",
-      type: "image",
+      type: "string",
       validation: (Rule) => Rule.required(),
     },
     {

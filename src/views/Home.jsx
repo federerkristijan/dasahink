@@ -1,7 +1,8 @@
 import React from "react";
+
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Insta from "../insta";
+import Insta from "../components/CMS/Insta";
 
 const Home = () => {
   return (
@@ -42,14 +43,8 @@ const Home = () => {
           </Button>
         </Form>
       </div>
-      {/* link to insta */}
       <div className="home-insta">
-        <div className="insta-title">
-          <h3>my Insta stories is where its all at. join join me there</h3>
-        </div>
-        <div className="insta-card">
-          <div className="insta-pics"><Insta /></div>
-        </div>
+        <Insta />
       </div>
     </div>
   );
