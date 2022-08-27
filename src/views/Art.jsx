@@ -1,18 +1,11 @@
 import React from "react";
+// import artCard from "../../sanity/schemas/artCard";
 
 const Art = () => {
   return (
     <div className="art">
       <div className="art-card">
-        <div className="art-image">image</div>
-        <div className="art-text">
-          <div className="art-title">
-            <h1>title</h1>
-          </div>
-          <div className="art-description">
-            <p>description</p>
-          </div>
-        </div>
+        {/* <artCard /> */}
       </div>
     </div>
   );

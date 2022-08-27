@@ -1,7 +1,6 @@
-// /sanity/card.js
-const card = {
-  name: "card",
-  title: "Card",
+const musicCard = {
+  name: "musicCard",
+  title: "MusicCard",
   type: "document",
   fields: [
     {
@@ -17,8 +16,8 @@ const card = {
       validation: (Rule) => Rule.required(),
     },
     {
-      title: "Image",
-      name: "image",
+      title: "Video",
+      name: "video",
       type: "string",
       validation: (Rule) => Rule.required(),
     },
@@ -31,4 +30,4 @@ const card = {
   ],
 };
 
-export default card;
+export default musicCard;

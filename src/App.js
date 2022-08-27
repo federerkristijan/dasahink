@@ -24,12 +24,12 @@ function App() {
       <main className="App">
         <Routes>
           <Route exact path="/" element={<Home />} >
-            <Route path="/about" element={<About />} />
-            <Route path="/art" element={<Art />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/domination" element={<Domination />} />
-            <Route path="/film" element={<Film />} />
-            <Route path="/music" element={<Music />} />
+            <Route path="/about" component={<About />} />
+            <Route path="/art" component={<Art />} />
+            <Route path="/blog" component={<Blog />} />
+            <Route path="/domination" component={<Domination />} />
+            <Route path="/film" component={<Film />} />
+            <Route path="/music" component={<Music />} />
             <Route component={NotFound} />
           </Route>
         </Routes>
