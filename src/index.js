@@ -2,7 +2,7 @@
 import 'modern-css-reset';
 import './index.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { createRoot } from "react-dom/client"
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';

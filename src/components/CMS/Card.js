@@ -3,20 +3,30 @@ import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 // import BlockContent from "@sanity/block-content-to-react";
-import { sanityClient, imageUrlBuilder } from "./client";
+import { sanityClient, imageUrlBuilder } from "../../client";
 
-// const query = `
-//   *[ _type == 'card'] { title, description, image, slug }
-// `;
-
-function Card() {
+export default function Card() {
   const [cardData, setCardData] = useState(null);
 
   useEffect(() => {
+    // GROQ Query
     sanityClient.fetch(
-      `*[_type == "post]`
+      `*[_type == "document"]{
+        title,
+        description,
+        image,
+        slug,
+        image{
+          asset_>{
+            _id,
+            url
+          }
+        }
+      }`
     )
-  })
+    .then((data) => setCardData(data))
+    .catch(console.error);
+  }, [])
 
 
   // this variable is populated from `react-router` which pulls it from the URL
@@ -40,7 +50,11 @@ function Card() {
   //       {}
   // );
 
-  return <></>;
+  return (<>
+    <h1>this is card title</h1>
+    <h3>this is card text</h3>
+
+  </>);
 }
 
-export default Card;
+ Card;
