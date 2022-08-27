@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import BlockContent from "@sanity/block-content-to-react";
-import { sanity, imageUrlBuilder } from "./sanity";
+import { sanityClient, imageUrlBuilder } from "./client";
 
 const query = `
   *[ _type == 'card'] { title, description, image, slug }

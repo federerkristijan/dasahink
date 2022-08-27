@@ -2,7 +2,7 @@
 import { useQuery } from 'react-query';
 import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import { sanity, imageUrlBuilder } from './sanity';
+import { sanityClient, imageUrlBuilder } from './sanity';
 
 const query = `
   *[ _type == 'insta' ] { title, image, slug }
