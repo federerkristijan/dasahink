@@ -2,7 +2,7 @@
 import { useQuery } from 'react-query';
 import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import { sanityClient, imageUrlBuilder } from './sanity';
+import { sanityClient, imageUrlBuilder } from './client';
 
 const query = `
   *[ _type == 'insta' ] { title, image, slug }
@@ -15,7 +15,7 @@ function Insta() {
   // data is fetched from sanity via the sanity client and stored into
   // application state via react-query. note that the slug is used as the
   // "query key": https://react-query.tanstack.com/guides/query-keys
-  const { data = [] } = useQuery(slug, () => sanity.fetch(query, { slug }));
+  const { data = [] } = useQuery(slug, () => sanityClient.fetch(query, { slug }));
 
   // we'll use destructuring assignment to return the first mab lib
   const [insta] = data;
