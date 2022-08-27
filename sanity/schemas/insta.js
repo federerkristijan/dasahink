@@ -2,7 +2,7 @@
 const insta = {
   name: "insta",
   title: "Insta",
-  type: "document",
+  type: "image",
   fields: [
     {
       title: "Title",

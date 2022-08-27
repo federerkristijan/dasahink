@@ -26,5 +26,15 @@ export default function Insta() {
       .catch(console.error);
   }, []);
 
-  return <div className="insta-wrapper"></div>;
+  return (
+    <div className="insta-wrapper">
+      <div className="insta-title">
+        <h3>my Insta stories is where its all at. join join me there</h3>
+        {instaData &&
+          instaData.map((image, index) => {
+
+          })}
+      </div>
+    </div>
+  );
 }

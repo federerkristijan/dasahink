@@ -43,14 +43,9 @@ const Home = () => {
           </Button>
         </Form>
       </div>
-      {/* link to insta */}
+      {/* every pic's slug is link to its insta url */}
       <div className="home-insta">
-        <div className="insta-title">
-          <h3>my Insta stories is where its all at. join join me there</h3>
-        </div>
-        <div className="insta-card">
-          <div className="insta-pics"><Insta /></div>
-        </div>
+        <Insta />
       </div>
     </div>
   );
