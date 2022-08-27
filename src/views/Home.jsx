@@ -43,7 +43,6 @@ const Home = () => {
           </Button>
         </Form>
       </div>
-      {/* every pic's slug is link to its insta url */}
       <div className="home-insta">
         <Insta />
       </div>
