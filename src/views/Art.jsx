@@ -1,11 +1,11 @@
 import React from "react";
-// import artCard from "../../sanity/schemas/artCard";
+import ArtCard from "../components/CMS/ArtCard";
 
 const Art = () => {
   return (
     <div className="art">
       <div className="art-card">
-        {/* <artCard /> */}
+        <ArtCard />
       </div>
     </div>
   );

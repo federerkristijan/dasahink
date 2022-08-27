@@ -1,5 +1,6 @@
 import * as React from "react";
 // import { useEffect, useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -17,13 +18,13 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <header>
         <Navbar />
       </header>
       <main className="App">
         <Routes>
-          <Route exact path="/" element={<Home />} >
+          <Route exact path="/" element={<Home />}>
             <Route path="/about" component={<About />} />
             <Route path="/art" component={<Art />} />
             <Route path="/blog" component={<Blog />} />
@@ -37,7 +38,7 @@ function App() {
       <footer className="footer">
         <Footer />
       </footer>
-    </>
+    </BrowserRouter>
   );
 
   // function LayoutWithNavbar() {

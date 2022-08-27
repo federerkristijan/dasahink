@@ -1,15 +1,15 @@
 // /src/index.js
-import 'modern-css-reset';
-import './index.css';
-import React from 'react';
+import "modern-css-reset";
+import "./index.css";
+import React from "react";
 // import ReactDOM from 'react-dom';
-import { createRoot } from "react-dom/client"
-import { BrowserRouter } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { createRoot } from "react-dom/client";
+
+import { QueryClient, QueryClientProvider } from "react-query";
 // import { persistWithLocalStorage } from 'react-query/persist-localstorage-experimental';
-import App from './App';
+import App from "./App";
 // import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -26,11 +26,9 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <App />
     </QueryClientProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
 
 // serviceWorkerRegistration.register();
