@@ -11,4 +11,6 @@ export const sanityClient = SanityClient({
   useCdn: true,
 });
 
+//al tren; ovo bi ti radilo, ako bi dodao tamo i localhjost:3000, da. zato sam izbunjen jer sma radio sve po tutorialu
+
 export const imageUrlBuilder = ImageUrlBuilder(sanityClient);

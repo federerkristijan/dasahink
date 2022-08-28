@@ -27,5 +27,5 @@ const artCard = {
     },
   ],
 };
-
+//di je ovaj kaj puca?
 export default artCard;

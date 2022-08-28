@@ -1,3 +1,5 @@
+//zakaj daje istu grsku onda
+
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -7,6 +9,7 @@ import { sanityClient, imageUrlBuilder } from "../../client";
 export default function ArtCard() {
   const [artCardData, setArtCardData] = useState(null);
 
+  // ja bih rekao t
   useEffect(() => {
     // GROQ Query
     sanityClient.fetch(
@@ -17,7 +20,7 @@ export default function ArtCard() {
         slug,
         image{
           asset_>{
-            _id,
+            _id,ad
             url
           }
         }
