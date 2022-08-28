@@ -2,7 +2,7 @@ import React from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Insta from "../components/CMS/Insta";
+// import Insta from "../components/CMS/Insta";
 
 const Home = () => {
   return (
@@ -44,7 +44,7 @@ const Home = () => {
         </Form>
       </div>
       <div className="home-insta">
-        <Insta />
+        {/* <Insta /> */}
       </div>
     </div>
   );
