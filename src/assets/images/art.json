@@ -3,107 +3,107 @@
     {
       "format": "jpg",
       "id": 1,
-      "src": "./art1"
+      "src": "./art1.jpg"
     },
     {
       "format": "jpg",
       "id": 2,
-      "src": "./art2"
+      "src": "./art2.jpg"
     },
     {
       "format": "jpg",
       "id": 3,
-      "src": "./art3"
+      "src": "./art3.jpg"
     },
     {
       "format": "jpg",
       "id": 4,
-      "src": "./art4a"
+      "src": "./art4a.jpg"
     },
     {
       "format": "jpg",
       "id": 5,
-      "src": "./art4b"
+      "src": "./art4b.jpg"
     },
     {
       "format": "jpg",
       "id": 6,
-      "src": "./art5a"
+      "src": "./art5a.jpg"
     },
     {
       "format": "jpg",
       "id": 7,
-      "src": "./art5b"
+      "src": "./art5b.jpg"
     },
     {
       "format": "jpg",
       "id": 8,
-      "src": "./art6a"
+      "src": "./art6a.jpg"
     },
     {
       "format": "jpg",
       "id": 9,
-      "src": "./art6b"
+      "src": "./art6b.jpg"
     },
     {
       "format": "jpg",
       "id": 10,
-      "src": "./art7"
+      "src": "./art7.jpg"
     },
     {
       "format": "jpg",
       "id": 11,
-      "src": "./art8"
+      "src": "./art8.jpg"
     },
     {
       "format": "jpg",
       "id": 12,
-      "src": "./art9"
+      "src": "./art9.jpg"
     },
     {
       "format": "jpg",
       "id": 13,
-      "src": "./art10"
+      "src": "./art10.jpg"
     },
     {
       "format": "jpg",
       "id": 14,
-      "src": "./art11"
+      "src": "./art11.jpg"
     },
     {
       "format": "jpg",
       "id": 15,
-      "src": "./art12"
+      "src": "./art12.jpg"
     },
     {
       "format": "jpg",
       "id": 16,
-      "src": "./art13"
+      "src": "./art13.jpg"
     },
     {
       "format": "jpg",
       "id": 17,
-      "src": "./art14"
+      "src": "./art14.jpg"
     },
     {
       "format": "jpg",
       "id": 18,
-      "src": "./art15"
+      "src": "./art15.jpg"
     },
     {
       "format": "jpg",
       "id": 19,
-      "src": "./art16"
+      "src": "./art16.jpg"
     },
     {
       "format": "jpg",
       "id": 20,
-      "src": "./art17"
+      "src": "./art17.jpg"
     },
     {
       "format": "jpg",
       "id": 21,
-      "src": "./art18"
+      "src": "./art18.jpg"
     }
   ]
 }
