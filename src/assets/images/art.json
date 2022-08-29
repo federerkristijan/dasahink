@@ -3,17 +3,20 @@
     {
       "format": "jpg",
       "id": 1,
-      "src": "./art1.jpg"
+      "src": "./art1.jpg",
+      "description": "With Shani Leiderman and Florian Mate, Pic by Tobi Jall, Project developement by Gabrielė Sergejevaitė"
     },
     {
       "format": "jpg",
       "id": 2,
-      "src": "./art2.jpg"
+      "src": "./art2.jpg",
+      "description": "with the inspiring Candy Flip, shot by Tobi Jall"
     },
     {
       "format": "jpg",
       "id": 3,
-      "src": "./art3.jpg"
+      "src": "./art3.jpg",
+      "description": "Modelled by Skara Apis and myself. Photography by Tobi Jall"
     },
     {
       "format": "jpg",
@@ -43,7 +46,8 @@
     {
       "format": "jpg",
       "id": 9,
-      "src": "./art6b.jpg"
+      "src": "./art6b.jpg",
+      "description": "Left: with Parker Marx and myself, right with Jessica Comis and myself"
     },
     {
       "format": "jpg",
@@ -68,7 +72,8 @@
     {
       "format": "jpg",
       "id": 14,
-      "src": "./art11.jpg"
+      "src": "./art11.jpg",
+      "description": "This sculpture, the PetPod, is a redesign for the sex toy: Fleshlight. It is a usable sculpture who have traveled with me to different talks and exhibitions."
     },
     {
       "format": "jpg",
@@ -103,7 +108,8 @@
     {
       "format": "jpg",
       "id": 21,
-      "src": "./art18.jpg"
+      "src": "./art18.jpg",
+      "description": "Circles and Lines is a video installation I created for the exhibition “Adornism”"
     }
   ]
 }

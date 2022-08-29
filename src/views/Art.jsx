@@ -17,7 +17,7 @@ const Art = () => {
           {art.map((id) => {
             return (
               <span key={id}>
-                <img src={art.index} key={art.id} alt="art-images" />
+                <img src={art.id} key={art.id} alt="art-images" />
                 <p>{art.description}</p>
               </span>
             );
