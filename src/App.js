@@ -1,7 +1,7 @@
 import * as React from "react";
 // import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route , Outlet} from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -24,14 +24,14 @@ function App() {
       </header>
       <main className="App">
         <Routes>
-            <Route exact path="/" element={<Home />}>
-            <Route path="/about" element={<About />} />
-            <Route path="art" element={<Art />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/domination" element={<Domination />} />
-            <Route path="/film" element={<Film />} />
-            <Route path="/music" element={<Music />} />
-            <Route element={NotFound} />
+            <Route path="/" element={<Layout />} >
+              <Route path="/" element={<Home />} />
+              <Route path="art" element={<Art />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/domination" element={<Domination />} />
+              <Route path="/film" element={<Film />} />
+              <Route path="/music" element={<Music />} />
+              <Route element={NotFound} />
           </Route>
         </Routes>
       </main>
@@ -41,16 +41,15 @@ function App() {
     </BrowserRouter>
   );
 
-  // da, pravio sam outlet ali ne znam kako se to veze, ako je moguce sa sanity cms-om
-  // function LayoutWithNavbar() {
-  //   return (
-  //     <>
-  //       <Navbar />
-  //       <Outlet />
-  //       <Footer />
-  //     </>
-  //   );
-  // }
+  function Layout() {
+    return (
+      <>
+        {/* <Navbar /> */}
+        <Outlet />
+        {/* <Footer /> */}
+      </>
+    );
+  }
 }
 
 export default App;
