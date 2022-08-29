@@ -6,7 +6,7 @@ import { Routes, Route , Outlet} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
-import About from "./views/About";
+// import About from "./views/About";
 import Art from "./views/Art";
 import Blog from "./views/Blog";
 import Domination from "./views/Domination";
