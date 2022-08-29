@@ -18,14 +18,8 @@ const artCard = {
       name: "image",
       type: "image",
       validation: (Rule) => Rule.required(),
-    },
-    {
-      name: "slug",
-      type: "slug",
-      options: { source: "title" },
-      validation: (Rule) => Rule.required(),
-    },
+    }
   ],
 };
-//di je ovaj kaj puca?
+
 export default artCard;
