@@ -1,5 +1,7 @@
 import React from "react";
 
+import { video } from "./data";
+
 const Film = () => {
   return (
     <div className="film">
@@ -11,13 +13,12 @@ const Film = () => {
         </h4>
       </div>
       <div className="film-card">
-        <div className="video">Video comes here</div>
-        <div className="film-descrpition">
-          <h4>Description comes here</h4>
-        </div>
-        <div className="film-credits">
-          <p>Credits come here</p>
-        </div>
+        {(video || []).map(({ id, img, description }) => (
+          <span key={id}>
+            <img className="images" src={img} alt={video.id} />
+            <p>{video.description}</p>
+          </span>
+        ))}
       </div>
     </div>
   );
