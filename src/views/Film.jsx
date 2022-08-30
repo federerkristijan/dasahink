@@ -1,5 +1,7 @@
 import React from "react";
 
+import { video } from "./data";
+
 const Film = () => {
   return (
     <div className="film">
