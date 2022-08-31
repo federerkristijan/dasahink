@@ -3,7 +3,7 @@ const artImg = {
     {
       format: "jpg",
       id: 1,
-      src: require("../assets/images/art/art1.jpg"),
+      src: require("../assets/images/art1.jpg"),
       height: "85vh",
       width: "28vw",
       description:
@@ -12,20 +12,20 @@ const artImg = {
     {
       format: "jpg",
       id: 2,
-      src: require("../assets/images/art/art2.jpg"),
+      src: require("../assets/images/art2.jpg"),
       description: "with the inspiring Candy Flip, shot by Tobi Jall",
     },
     {
       format: "jpg",
       id: 3,
-      src: require("../assets/images/art/art3.jpg"),
+      src: require("../assets/images/art3.jpg"),
       description:
         "Modelled by Skara Apis and myself. Photography by Tobi Jall",
     },
     {
       format: "jpg",
       id: 4,
-      src: require("../assets/images/art/art4.jpg"),
+      src: require("../assets/images/art4.jpg"),
     },
     {
       format: "jpg",
@@ -121,7 +121,7 @@ const artImg = {
   ],
 };
 
-const video = {
+const videos = {
   video: [
     {
       id: 1,
@@ -150,4 +150,69 @@ const video = {
   ],
 };
 
-export { artImg, video };
+const music = {
+  music: [
+    {
+      id: 1,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 2,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 3,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 4,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 5,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 6,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 7,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 8,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 9,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+    {
+      id: 10,
+      height: "85vh",
+      width: "28vw",
+      src: "",
+    },
+  ]
+}
+
+export { artImg, videos, music };
