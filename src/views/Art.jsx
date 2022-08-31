@@ -19,9 +19,9 @@ const Art = () => {
                 <img
                   className="images"
                   src={img}
-                  alt={artImg.id}
+                  alt={id}
                 />
-                <p>{artImg.description}</p>
+                <p>{description}</p>
               </span>
             ))}
         </div>
