@@ -14,12 +14,14 @@ const Art = () => {
           </h4>
         </div>
         <div className="art-image">
-          {artImg.image.map(({id, img, description}) => (
+          {artImg.image.map(({id, img, height, width, description}) => (
               <span key={id}>
                 <img
                   className="images"
                   src={img}
                   alt={id}
+                  height={height}
+                  width={width}
                 />
                 <p>{description}</p>
               </span>
