@@ -1,6 +1,6 @@
 import React from "react";
 
-import { video } from "./data";
+import { videos } from "./data";
 
 const Film = () => {
   return (
@@ -13,10 +13,10 @@ const Film = () => {
         </h4>
       </div>
       <div className="film-card">
-        {(video || []).map(({ id, img, description }) => (
+        {(videos || []).map(({ id, img, description }) => (
           <span key={id}>
-            <img className="images" src={img} alt={video.id} />
-            <p>{video.description}</p>
+            <img className="images" src={img} alt={videos.id} />
+            <p>{videos.description}</p>
           </span>
         ))}
       </div>
