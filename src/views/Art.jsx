@@ -1,6 +1,7 @@
 import React from "react";
+import { artImg } from "./data";
 
-const Art = ({artImg}) => {
+const Art = () => {
   return (
     <div className="art">
       <div className="art-card">
@@ -13,14 +14,16 @@ const Art = ({artImg}) => {
           </h4>
         </div>
         <div className="art-image">
-          {(artImg || []).map(({id, img, description}) => (
+          {artImg.image.map(({id, img, height, width, description}) => (
               <span key={id}>
                 <img
                   className="images"
                   src={img}
-                  alt={artImg.id}
+                  alt={id}
+                  height={height}
+                  width={width}
                 />
-                <p>{artImg.description}</p>
+                <p>{description}</p>
               </span>
             ))}
         </div>

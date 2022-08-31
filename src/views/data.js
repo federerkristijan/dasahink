@@ -3,54 +3,63 @@ const artImg = {
     {
       format: "jpg",
       id: 1,
-      // src: require("../assets/images/art1.jpg"),
-      src: require("../assets/images/art1.jpg"),
-      height: "85vh",
-      width: "28vw",
+      img: require("../assets/images/art1.jpg"),
       description:
         "With Shani Leiderman and Florian Mate, Pic by Tobi Jall, Project developement by Gabrielė Sergejevaitė",
     },
     {
       format: "jpg",
       id: 2,
-      src: require("../assets/images/art2.jpg"),
+      img: require("../assets/images/art2.jpg"),
       description: "with the inspiring Candy Flip, shot by Tobi Jall",
     },
     {
       format: "jpg",
       id: 3,
-      src: require("../assets/images/art3.jpg"),
+      img: require("../assets/images/art3.jpg"),
       description:
         "Modelled by Skara Apis and myself. Photography by Tobi Jall",
     },
     {
       format: "jpg",
       id: 4,
-      src: require("../assets/images/art4a.jpg"),
+      height: "400px",
+      width: "240px",
+      img: require("../assets/images/art4a.jpg"),
     },
     {
       format: "jpg",
       id: 5,
+      height: "400px",
+      width: "240px",
       src: require("../assets/images/art4b.jpg"),
     },
     {
       format: "jpg",
       id: 6,
+      height: "400px",
+      width: "240px",
       img: require("../assets/images/art5a.jpg"),
     },
     {
       format: "jpg",
       id: 7,
+      height: "400px",
+      width: "240px",
       img: require("../assets/images/art5b.jpg"),
     },
     {
       format: "jpg",
       id: 8,
+      height: "400px",
+      width: "240px",
       img: require("../assets/images/art6a.jpg"),
     },
     {
       format: "jpg",
       id: 9,
+      height: "400px",
+      width: "240px",
       img: require("../assets/images/art6b.jpg"),
       description:
         "Left: with Parker Marx and myself, right with Jessica Comis and myself",
@@ -122,8 +131,8 @@ const artImg = {
     {
       format: "jpg",
       id: 22,
-      img: require("../assets/images/art18.jpg")
-    }
+      img: require("../assets/images/art18.jpg"),
+    },
   ],
 };
 
@@ -218,7 +227,7 @@ const music = {
       width: "28vw",
       src: "",
     },
-  ]
-}
+  ],
+};
 
 export { artImg, videos, music };
