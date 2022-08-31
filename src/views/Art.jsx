@@ -1,6 +1,7 @@
 import React from "react";
+import { artImg } from "./data";
 
-const Art = ({artImg}) => {
+const Art = () => {
   return (
     <div className="art">
       <div className="art-card">
@@ -13,7 +14,7 @@ const Art = ({artImg}) => {
           </h4>
         </div>
         <div className="art-image">
-          {(artImg || []).map(({id, img, description}) => (
+          {artImg.image.map(({id, img, description}) => (
               <span key={id}>
                 <img
                   className="images"
