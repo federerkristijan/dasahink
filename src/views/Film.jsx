@@ -1,6 +1,6 @@
 import React from "react";
 
-import { videos } from "./data";
+// import { videos } from "./data";
 
 const Film = () => {
   return (
@@ -13,12 +13,19 @@ const Film = () => {
         </h4>
       </div>
       <div className="film-card">
-        {(videos || []).map(({ id, img, description }) => (
+        {/* {(videos || []).map(({ id, src, description }) => (
           <span key={id}>
-            <img className="images" src={img} alt={videos.id} />
+            <img className="images" src={src} alt={videos.id} />
             <p>{videos.description}</p>
           </span>
-        ))}
+        ))} */}
+        <iframe
+          src="https://www.youtube.com/embed/MA5ZyYXhyOY"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          title="video"
+        />
       </div>
     </div>
   );
