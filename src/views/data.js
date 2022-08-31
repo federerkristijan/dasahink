@@ -136,98 +136,98 @@ const artImg = {
   ],
 };
 
-const videos = {
-  video: [
-    {
-      id: 1,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 2,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 3,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 4,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-  ],
-};
+// const videos = {
+//   video: [
+//     {
+//       id: 1,
+//       height: "85vh",
+//       width: "28vw",
+//       // src: require(url("https://www.youtube.com/watch?v=NkvWDAXCIXw")),
+//     },
+//     {
+//       id: 2,
+//       height: "85vh",
+//       width: "28vw",
+//       // src: "https://www.youtube.com/watch?v=fCZeCFOjdVU",
+//     },
+//     {
+//       id: 3,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 4,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//   ],
+// };
 
-const music = {
-  music: [
-    {
-      id: 1,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 2,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 3,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 4,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 5,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 6,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 7,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 8,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 9,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-    {
-      id: 10,
-      height: "85vh",
-      width: "28vw",
-      src: "",
-    },
-  ],
-};
+// const music = {
+//   music: [
+//     {
+//       id: 1,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 2,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 3,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 4,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 5,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 6,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 7,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 8,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 9,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//     {
+//       id: 10,
+//       height: "85vh",
+//       width: "28vw",
+//       src: "",
+//     },
+//   ],
+// };
 
-export { artImg, videos, music };
+export { artImg };
