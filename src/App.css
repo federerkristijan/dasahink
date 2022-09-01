@@ -137,6 +137,24 @@ iframe {
   min-height: 75vh;
 }
 
+.film-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 6rem;
+}
+
+h5 {
+  text-align: center;
+}
+
+.film-credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Domination */
 
 .domination-card {
@@ -170,4 +188,11 @@ iframe {
 /* Blog */
 .b-text {
   padding: 1rem;
+}
+
+@media screen and (max-width: 720px) {
+  iframe {
+    width: 100%;
+    min-height: 95%;
+  }
 }

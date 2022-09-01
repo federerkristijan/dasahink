@@ -3,12 +3,12 @@ import React from "react";
 const Film = () => {
   return (
     <div className="film">
-      <div className="film-header">
-        <h4>
+      <div className="film-title">
+        <h5>
           One of my favourite things is manifesting an entire concept and
           bringing it into life through video. Here are some Videos I directed
           in the last years!
-        </h4>
+        </h5>
       </div>
       <div className="film-card">
         <iframe
