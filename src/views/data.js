@@ -136,35 +136,6 @@ const artImg = {
   ],
 };
 
-// const videos = {
-//   video: [
-//     {
-//       id: 1,
-//       height: "85vh",
-//       width: "28vw",
-//       // src: require(url("https://www.youtube.com/watch?v=NkvWDAXCIXw")),
-//     },
-//     {
-//       id: 2,
-//       height: "85vh",
-//       width: "28vw",
-//       // src: "https://www.youtube.com/watch?v=fCZeCFOjdVU",
-//     },
-//     {
-//       id: 3,
-//       height: "85vh",
-//       width: "28vw",
-//       src: "",
-//     },
-//     {
-//       id: 4,
-//       height: "85vh",
-//       width: "28vw",
-//       src: "",
-//     },
-//   ],
-// };
-
 // const music = {
 //   music: [
 //     {
