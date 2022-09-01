@@ -121,13 +121,38 @@ a {
 }
 
 /* Column cards */
-.film-card, .video-card, .blog-card {
+.film-card, .blog-card {
   display: flex;
-  border: 2px solid blue;
-  justify-content: space-evenly;
+  /* border: 2px solid blue; */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 2rem 7rem;
+  margin: 2rem 3rem;
+}
+
+/* Film */
+
+iframe {
+  width: 80%;
+  min-height: 75vh;
+}
+
+.film-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 6rem;
+}
+
+h5 {
+  text-align: center;
+}
+
+.film-credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Domination */
@@ -163,4 +188,11 @@ a {
 /* Blog */
 .b-text {
   padding: 1rem;
+}
+
+@media screen and (max-width: 720px) {
+  iframe {
+    width: 100%;
+    min-height: 95%;
+  }
 }
