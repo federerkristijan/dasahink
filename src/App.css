@@ -88,7 +88,7 @@ span {
 /* Art */
 .art-card {
   /* border: 2px solid blue; */
-  margin: 2rem 6rem;
+  margin: 2rem 4rem;
   max-width: fit-content;
 }
 
@@ -98,8 +98,19 @@ span {
 }
 
 .art-image {
-  /* border: 5px solid green; */
-  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+}
+
+.art-duo {
+  display: flex;
+  max-width: 38%;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.duo-desc {
 
 }
 
