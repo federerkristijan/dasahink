@@ -49,6 +49,27 @@ const Art = () => {
             </span>
           </div>
         </div>
+        <div className="art-image">
+          <div className="art-trio">
+            <img src={require("../assets/images/art7.jpg")} />
+            <img src={require("../assets/images/art8.jpg")} />
+            <img src={require("../assets/images/art9.jpg")} />
+          </div>
+          <div className="art-trio">
+          <img src={require("../assets/images/art16.jpg")} />
+            <img src={require("../assets/images/art17.jpg")} />
+            <img src={require("../assets/images/art18.jpg")} />
+            <span>
+            Circles and Lines is a video installation I created for the exhibition “Adornism”
+            </span>
+            <span>Music, performance and direction: Hadas Hinkis</span>
+            <span>
+            Camera and light design: <a href="www.tomrotsch.com">Tom Rotsch</a>
+            </span>
+            <span>Hands: <a href="https://www.instagram.com/theomegapoint0/?hl=en">Alexandra Moon</a></span>
+            <span>A project with photographer <a href="https://www.instagram.com/epiczambo/">Dark as Ink</a></span>
+          </div>
+        </div>
       </div>
     </div>
   );
