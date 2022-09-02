@@ -22,18 +22,6 @@ const artImg = {
     },
     {
       format: "jpg",
-      id: 4,
-      img: require("../assets/images/art10.jpg"),
-    },
-    {
-      format: "jpg",
-      id: 5,
-      img: require("../assets/images/art11.jpg"),
-      description:
-        "This sculpture, the PetPod, is a redesign for the sex toy: Fleshlight. It is a usable sculpture who have traveled with me to different talks and exhibitions.",
-    },
-    {
-      format: "jpg",
       id: 6,
       img: require("../assets/images/art12.jpg"),
     },
@@ -46,17 +34,7 @@ const artImg = {
       format: "jpg",
       id: 8,
       img: require("../assets/images/art14.jpg"),
-    },
-    {
-      format: "jpg",
-      id: 9,
-      img: require("../assets/images/art15a.jpg"),
-    },
-    {
-      format: "jpg",
-      id: 10,
-      img: require("../assets/images/art15b.jpg"),
-    },
+    }
   ],
 };
 

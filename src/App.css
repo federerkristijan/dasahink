@@ -101,6 +101,16 @@ span {
   display: flex;
   flex-direction: column;
   padding: 1rem 3rem;
+}
+
+.art-duo {
+  display: flex;
+  max-width: 38%;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.duo-desc {
 
 }
 
