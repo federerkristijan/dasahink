@@ -1,5 +1,6 @@
 body {
-  color: #757575;
+  /* color: #757575; */
+  background-color: #fafafa;
 }
 
 .App {
@@ -58,7 +59,7 @@ a {
 .App > .home,
 .art,
 .film, .music, .blog {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* Row Cards */
