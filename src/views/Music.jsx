@@ -59,7 +59,6 @@ const Music = () => {
           allowfullscreen
           title="video"
         />
-      </div>
       <div className="music-description">
         <span>
           Check out this video we shot for my song Ball in the Park!! Shot in
@@ -67,6 +66,7 @@ const Music = () => {
           everybody who made it possible. SHOULD THIS VIDEO BE AGE PROTECTED?
           find out by logging in to your youtube and watching
         </span>
+      </div>
       </div>
       <div className="music-card">
         <iframe
@@ -85,7 +85,6 @@ const Music = () => {
           allowfullscreen
           title="video"
         />
-      </div>
       <div className="music-description">
         <span>
           In 2015 I wrote music for and performed in a dance piece by Tal Porat
@@ -93,6 +92,7 @@ const Music = () => {
           of the songs from the performance. Shot in the Israeli Dessert and in
           the dead sea.
         </span>
+      </div>
       </div>
       <div className="music-card">
         <iframe
@@ -102,7 +102,6 @@ const Music = () => {
           allowfullscreen
           title="video"
         />
-      </div>
       <div className="music-description">
         <span>
           Milgrom, the band, is a fun fun project with{" "}
@@ -116,6 +115,7 @@ const Music = () => {
           and created an improvisation app based on the songs. Giori produced
           the songs and I wrote lyrics. Here are some songs from our EP.
         </span>
+      </div>
       </div>
       <div className="music-card">
         <iframe
