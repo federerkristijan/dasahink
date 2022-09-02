@@ -14,11 +14,12 @@ a {
   text-decoration: none;
 }
 
-/* p {
-  text-align: justify;
+span {
+  text-align: center;
+  line-height: 1.8rem;
   letter-spacing: 0.1rem;
-  line-height: 1.5rem;
-} */
+  width: 80%;
+}
 
 /* Navbar */
 .App > .navbar {
@@ -86,14 +87,19 @@ a {
 
 /* Art */
 .art-card {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   margin: 2rem 6rem;
   max-width: fit-content;
 }
 
+.art-title {
+  padding: 1rem 2.5rem;
+  text-align: justify;
+}
 
 .art-image {
-  border: 5px solid green;
+  /* border: 5px solid green; */
+  padding: 1rem 3rem;
 
 }
 
