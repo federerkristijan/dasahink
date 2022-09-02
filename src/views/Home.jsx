@@ -23,7 +23,7 @@ const Home = () => {
               This is the home of Dasa Hink, an artist, a film maker, a musician and a public activist. I’ve collected some art and writing for you to enjoy,
               plus some more info about me and some stuff im up to. Please do
               follow me on instagram or register for the mailing list to get
-              info about concerts, BDSM tours, or other shenanigans I’m up to.
+              info about concerts, BDSM tours, or other shenanigans I'm up to.
             </p>
           </div>
         </div>
