@@ -22,6 +22,48 @@ const artImg = {
     },
     {
       format: "jpg",
+      id: 13,
+      img: require("../assets/images/art10.jpg"),
+    },
+    {
+      format: "jpg",
+      id: 14,
+      img: require("../assets/images/art11.jpg"),
+      description:
+        "This sculpture, the PetPod, is a redesign for the sex toy: Fleshlight. It is a usable sculpture who have traveled with me to different talks and exhibitions.",
+    },
+    {
+      format: "jpg",
+      id: 15,
+      img: require("../assets/images/art12.jpg"),
+    },
+    {
+      format: "jpg",
+      id: 16,
+      img: require("../assets/images/art13.jpg"),
+    },
+    {
+      format: "jpg",
+      id: 17,
+      img: require("../assets/images/art14.jpg"),
+    },
+    {
+      format: "jpg",
+      id: 18,
+      img: require("../assets/images/art15a.jpg"),
+    },
+    {
+      format: "jpg",
+      id: 19,
+      img: require("../assets/images/art15b.jpg"),
+    },
+  ],
+};
+
+const artDuo = {
+  image: [
+    {
+      format: "jpg",
       id: 4,
       height: "400px",
       width: "240px",
@@ -63,7 +105,12 @@ const artImg = {
       img: require("../assets/images/art6b.jpg"),
       description:
         "Left: with Parker Marx and myself, right with Jessica Comis and myself",
-    },
+    }
+  ]
+}
+
+const artTrio = {
+  image: [
     {
       format: "jpg",
       id: 10,
@@ -81,43 +128,6 @@ const artImg = {
     },
     {
       format: "jpg",
-      id: 13,
-      img: require("../assets/images/art10.jpg"),
-    },
-    {
-      format: "jpg",
-      id: 14,
-      img: require("../assets/images/art11.jpg"),
-      description:
-        "This sculpture, the PetPod, is a redesign for the sex toy: Fleshlight. It is a usable sculpture who have traveled with me to different talks and exhibitions.",
-    },
-    {
-      format: "jpg",
-      id: 15,
-      img: require("../assets/images/art12.jpg"),
-    },
-    {
-      format: "jpg",
-      id: 16,
-      img: require("../assets/images/art13.jpg"),
-    },
-    {
-      format: "jpg",
-      id: 17,
-      img: require("../assets/images/art14.jpg"),
-    },
-    {
-      format: "jpg",
-      id: 18,
-      img: require("../assets/images/art15a.jpg"),
-    },
-    {
-      format: "jpg",
-      id: 19,
-      img: require("../assets/images/art15b.jpg"),
-    },
-    {
-      format: "jpg",
       id: 20,
       img: require("../assets/images/art16.png"),
     },
@@ -132,8 +142,8 @@ const artImg = {
       format: "jpg",
       id: 22,
       img: require("../assets/images/art18.jpg"),
-    },
-  ],
-};
+    }
+  ]
+}
 
-export { artImg };
+export { artImg, artDuo, artTrio };
