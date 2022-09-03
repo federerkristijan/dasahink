@@ -61,7 +61,7 @@ span {
 .art,
 .film, .blog {
   /* border: 1px solid red; */
-  padding: 1rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
 }
 
 /* Row Cards */
@@ -98,20 +98,26 @@ span {
 }
 
 .art-image {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0rem;
+  padding: 1rem 2rem;
 }
 
 .art-duo {
   display: flex;
-  max-width: 38%;
+  max-width: 47%;
   gap: 1rem;
   margin: 1rem;
 }
 
-.duo-desc {
+.duo-desc, .trio-desc {
+  text-align: center;
+  padding: 1rem 5rem;
+}
 
+.art-trio {
+  display: flex;
+  max-width: 30%;
+  gap: 1.8rem;
+  margin: 1rem;
 }
 
 /* Subscribre */
@@ -212,8 +218,8 @@ h5 {
   position: relative;
   float: right;
   overflow: visible;
-  right: 10rem;
-  top: 10rem;
+  right: 12rem;
+  bottom: 24rem;
 }
 
 .domination-cover-image > img {

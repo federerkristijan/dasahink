@@ -29,22 +29,102 @@ const Domination = () => {
         </Form>
       </div>
       <div className="domination-card">
-        <div className="domination-card-image">image comes here</div>
-        <div className="domination-card-text">
-          <div className="domination-card-title">
-            <h5>Title</h5>
-          </div>
-          <div className="domination-card-description">
-            <p>Descprition comes here</p>
-          </div>
+        <div className="domination-card-image">
+          <img src={require("../assets/images/dom/dom1.jpg")} alt="" />
+        </div>
+        <div className="domination-card-description">
+          <span>
+            Since over seven years I've been working as a professional
+            Dominatrix in the sex industry. This job have had a significant
+            influence over my life.
+            <br />
+            I've discovered myself anew as a beautiful and powerful women.
+            <br />
+            I've discovered how versatile sexuality and sensuality can be.
+            <br />
+            I've developed intimate relationships with clients I would otherwise
+            never meet.
+            <br />
+            I've become aware of our messy contradicting attitudes towards
+            sexuality
+            <br />
+            I've become aware of stigma and prejudice against those who work in
+            the sex industry
+            <br />
+            I've met a ton of creatives, colleagues, and performers who are also
+            interested in sexuality and sensuality.{" "}
+          </span>
         </div>
       </div>
+      <div className="domination-card">
+        <div className="domination-card-description">
+          <span>
+            Seemed to me like what we do in the sex industry is important.{" "}
+            <br />
+            I have met so many clients who have been carrying around a fantasy
+            their entire life, being too afraid to share it with their partner,
+            even if its something so harmless as the love of feet.
+            <br />
+            I have met clients who are too shy, too different, or too introvert
+            to find a girlfriend in the real world. I've met people who only
+            enjoy a very specific kind of sexual activity, which is hard to find
+            a fitting partner for.
+            <br />
+            The creativity that goes into role play, the delicate hand skills
+            that are needed to touch another body in just the right way- I think
+            these capabilities have a lot of value.{" "}
+          </span>
+        </div>
+        <div className="domination-card-image">
+          <img src={require("../assets/images/dom/dom2.jpeg")} alt="" />
+        </div>
+      </div>
+
+      <div className="domination-card">
+        <div className="domination-card-image">
+          <img src={require("../assets/images/dom/dom3.jpg")} alt="" />
+        </div>
+        <div className="domination-card-description">
+          <span>
+            This is a part of the reason I have decided to be 'out of the
+            closet' about sex work. Talk openly about my experiences, answer
+            questions, share what I know.
+            <br />
+            I think the more we show our true colours, the less there is to be
+            ashamed of.
+            <br />
+            It's inspiring to me to see others be who they really are!
+            <br />
+            My creativity goes very well with sensuality and sexuality. Working
+            in this field have inspired me, because there are so many facets and
+            depth to our human need for connection, touch, and adventure.
+            <br />
+            There is so much yet to be discovered!
+            <br />
+            Since working in this industry I have directed an artistic erotic
+            film for <a href="https://xconfessions.com/collaborators/directors/erika-lust">Erika Lust</a>, created sex toy sculptures, made props for the
+            wonderful Sex School, costumes for Shu Lea Chiang's thought
+            provoking film 3x3x6, have been interviewed about sex work, and met
+            and worked with so so many like minded people.
+            <br />
+            There is an ever growing community of proud sex workers, activists,
+            and feminists, and so I'm happy to contribute my share even just by
+            writing these words. I dont think I will do this job forever, but it
+            has given me so much that its the least I can do.
+          </span>
+        </div>
+      </div>
+
       <div className="bdsm">
         <div className="bdsm-title">
-          <h3>Check out my fun BDSM Studio tour in Berlin!!</h3>
-          <a href="https://www.airbnb.com/experiences/530915?s=66&shared_item_type=2&virality_entry_point=2&sharer_id=49339993&unique_share_id=4062ceca-b5ee-47f9-9893-5689ffe42f11&source=embed_widget">
-            <h5>View On AirbnbExplore the world of Kink with a pro</h5>
-          </a>
+          <h5>
+            Check out my fun
+            <a href="https://www.airbnb.com/experiences/530915">
+              BDSM Studio tour in Berlin
+            </a>
+            !!
+          </h5>
+          <h6>View On AirbnbExplore the world of Kink with a pro</h6>
         </div>
         <a href="blog">Check out more over here in my blog</a>
       </div>
