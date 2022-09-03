@@ -126,6 +126,7 @@ span {
   justify-content: center;
   align-items: center;
   margin: 3rem 0;
+  max-width: 40vw;
 }
 
 .mb-3 {
@@ -199,18 +200,9 @@ h5 {
 
 /* Domination */
 
-.domination-card {
-  display: flex;
-  border: 2px solid blue;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  margin: 2rem 7rem;
-}
 
 .subscribe-title {
   display: flex;
-  border: 1px solid red;
   background: white;
   flex-direction: column;
   justify-content: space-between;
@@ -225,6 +217,30 @@ h5 {
 .domination-cover-image > img {
   height: 75vh;
   width: 35vw;
+}
+
+.domination-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin: 2rem 7rem;
+}
+
+.domination-card-image {
+  min-width: 45vw;
+}
+
+.domination-card-description {
+  padding: 1.5rem;
+}
+
+.bdsm {
+  text-align: center;
+}
+
+.blog-link {
+  text-transform: capitalize;
 }
 
 /* Blog */
