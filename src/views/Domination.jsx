@@ -103,8 +103,8 @@ const Domination = () => {
             <br />
             Since working in this industry I have directed an artistic erotic
             film for <a href="https://xconfessions.com/collaborators/directors/erika-lust">Erika Lust</a>, created sex toy sculptures, made props for the
-            wonderful Sex School, costumes for Shu Lea Chiang's thought
-            provoking film 3x3x6, have been interviewed about sex work, and met
+            wonderful <a href="https://www.sexschoolhub.com/">Sex School</a>, costumes for Shu Lea Chiang's thought
+            provoking film <a href="https://vimeo.com/341132412">3x3x6</a>, have been interviewed about sex work, and met
             and worked with so so many like minded people.
             <br />
             There is an ever growing community of proud sex workers, activists,

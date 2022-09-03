@@ -210,7 +210,7 @@ h5 {
 
 .subscribe-title {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background: white;
   flex-direction: column;
   justify-content: space-between;
