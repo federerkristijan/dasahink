@@ -29,11 +29,24 @@ const Domination = () => {
         </Form>
       </div>
       <div className="domination-card">
-        <div className="domination-card-image">image comes here</div>
+        <div className="domination-card-image"><img src={require("../assets/images/dom/dom1.jpg")} alt="" /></div>
         <div className="domination-card-text">
-          <div className="domination-card-title">
-            <h5>Title</h5>
+          <div className="domination-card-description">
+            <p>Descprition comes here</p>
           </div>
+        </div>
+      </div>
+      <div className="domination-card">
+        <div className="domination-card-image"><img src={require("../assets/images/dom/dom2.jpeg")} alt="" /></div>
+        <div className="domination-card-text">
+          <div className="domination-card-description">
+            <p>Descprition comes here</p>
+          </div>
+        </div>
+      </div>
+      <div className="domination-card">
+        <div className="domination-card-image"><img src={require("../assets/images/dom/dom3.jpg")} alt="" /></div>
+        <div className="domination-card-text">
           <div className="domination-card-description">
             <p>Descprition comes here</p>
           </div>
@@ -42,7 +55,7 @@ const Domination = () => {
       <div className="bdsm">
         <div className="bdsm-title">
           <h3>Check out my fun BDSM Studio tour in Berlin!!</h3>
-          <a href="https://www.airbnb.com/experiences/530915?s=66&shared_item_type=2&virality_entry_point=2&sharer_id=49339993&unique_share_id=4062ceca-b5ee-47f9-9893-5689ffe42f11&source=embed_widget">
+          <a href="https://www.airbnb.com/experiences/530915">
             <h5>View On AirbnbExplore the world of Kink with a pro</h5>
           </a>
         </div>

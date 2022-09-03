@@ -30,16 +30,16 @@ const Art = () => {
         </div>
         <div className="art-image">
           <div className="art-duo">
-            <img src={require("../assets/images/art4a.jpg")} alt="" />
-            <img src={require("../assets/images/art4b.jpg")} alt="" />
+            <img src={require("../assets/images/art/art4a.jpg")} alt="" />
+            <img src={require("../assets/images/art/art4b.jpg")} alt="" />
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art5a.jpg")} alt="" />
-            <img src={require("../assets/images/art5b.jpg")} alt="" />
+            <img src={require("../assets/images/art/art5a.jpg")} alt="" />
+            <img src={require("../assets/images/art/art5b.jpg")} alt="" />
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art6a.jpg")} alt="" />
-            <img src={require("../assets/images/art6b.jpg")} alt="" />
+            <img src={require("../assets/images/art/art6a.jpg")} alt="" />
+            <img src={require("../assets/images/art/art6b.jpg")} alt="" />
           </div>
           <div className="duo-desc">
             <span>
@@ -50,8 +50,8 @@ const Art = () => {
             </span>
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art10.jpg")} alt="" />
-            <img src={require("../assets/images/art10.jpg")} alt="" />
+            <img src={require("../assets/images/art/art10.jpg")} alt="" />
+            <img src={require("../assets/images/art/art10.jpg")} alt="" />
           </div>
           <div className="duo-desc">
               <span>
@@ -61,20 +61,20 @@ const Art = () => {
               </span>
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art15a.jpg")} alt="" />
-            <img src={require("../assets/images/art15b.jpg")} alt="" style={{ minWidth:"32vw" }}  />
+            <img src={require("../assets/images/art/art15a.jpg")} alt="" />
+            <img src={require("../assets/images/art/art15b.jpg")} alt="" style={{ minWidth:"32vw" }}  />
           </div>
         </div>
         <div className="art-image">
           <div className="art-trio">
-            <img src={require("../assets/images/art7.jpg")} alt="" />
-            <img src={require("../assets/images/art8.jpg")} alt="" />
-            <img src={require("../assets/images/art9.jpg")} alt="" />
+            <img src={require("../assets/images/art/art7.jpg")} alt="" />
+            <img src={require("../assets/images/art/art8.jpg")} alt="" />
+            <img src={require("../assets/images/art/art9.jpg")} alt="" />
           </div>
           <div className="art-trio">
-            <img src={require("../assets/images/art16.png")} alt="" height={"250px"} min-width={"160px"} />
-            <img src={require("../assets/images/art17.jpg")} alt="" height={"250px"} min-width={"160px"} />
-            <img src={require("../assets/images/art18.jpg")} alt="" height={"250px"} min-width={"160px"} />
+            <img src={require("../assets/images/art/art16.png")} alt="" height={"250px"} min-width={"160px"} />
+            <img src={require("../assets/images/art/art17.jpg")} alt="" height={"250px"} min-width={"160px"} />
+            <img src={require("../assets/images/art/art18.jpg")} alt="" height={"250px"} min-width={"160px"} />
           </div>
           <div className="trio-desc">
             <span>
