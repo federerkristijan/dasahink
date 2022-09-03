@@ -1,5 +1,5 @@
 import React from "react";
-import { artImg, artDuo, artTrio } from "./data";
+import { artImg } from "./data";
 
 const Art = () => {
   return (
@@ -30,16 +30,16 @@ const Art = () => {
         </div>
         <div className="art-image">
           <div className="art-duo">
-            <img src={require("../assets/images/art4a.jpg")} />
-            <img src={require("../assets/images/art4b.jpg")} />
+            <img src={require("../assets/images/art4a.jpg")} alt="" />
+            <img src={require("../assets/images/art4b.jpg")} alt="" />
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art5a.jpg")} />
-            <img src={require("../assets/images/art5b.jpg")} />
+            <img src={require("../assets/images/art5a.jpg")} alt="" />
+            <img src={require("../assets/images/art5b.jpg")} alt="" />
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art6a.jpg")} />
-            <img src={require("../assets/images/art6b.jpg")} />
+            <img src={require("../assets/images/art6a.jpg")} alt="" />
+            <img src={require("../assets/images/art6b.jpg")} alt="" />
           </div>
           <div className="duo-desc">
             <span>
@@ -50,8 +50,8 @@ const Art = () => {
             </span>
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art10.jpg")} />
-            <img src={require("../assets/images/art10.jpg")} />
+            <img src={require("../assets/images/art10.jpg")} alt="" />
+            <img src={require("../assets/images/art10.jpg")} alt="" />
           </div>
           <div className="duo-desc">
               <span>
@@ -61,20 +61,22 @@ const Art = () => {
               </span>
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art15a.jpg")} />
-            <img src={require("../assets/images/art15b.jpg")} />
+            <img src={require("../assets/images/art15a.jpg")} alt="" />
+            <img src={require("../assets/images/art15b.jpg")} alt="" style={{ minWidth:"32vw" }}  />
           </div>
         </div>
         <div className="art-image">
           <div className="art-trio">
-            <img src={require("../assets/images/art7.jpg")} />
-            <img src={require("../assets/images/art8.jpg")} />
-            <img src={require("../assets/images/art9.jpg")} />
+            <img src={require("../assets/images/art7.jpg")} alt="" />
+            <img src={require("../assets/images/art8.jpg")} alt="" />
+            <img src={require("../assets/images/art9.jpg")} alt="" />
           </div>
           <div className="art-trio">
-            <img src={require("../assets/images/art16.png")} />
-            <img src={require("../assets/images/art17.jpg")} />
-            <img src={require("../assets/images/art18.jpg")} />
+            <img src={require("../assets/images/art16.png")} alt="" height={"250px"} min-width={"160px"} />
+            <img src={require("../assets/images/art17.jpg")} alt="" height={"250px"} min-width={"160px"} />
+            <img src={require("../assets/images/art18.jpg")} alt="" height={"250px"} min-width={"160px"} />
+          </div>
+          <div className="trio-desc">
             <span>
               Circles and Lines is a video installation I created for the
               exhibition “Adornism”
