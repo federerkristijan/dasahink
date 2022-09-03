@@ -126,6 +126,7 @@ span {
   justify-content: center;
   align-items: center;
   margin: 3rem 0;
+  max-width: 40vw;
 }
 
 .mb-3 {
@@ -232,6 +233,14 @@ h5 {
 
 .domination-card-description {
   padding: 1.5rem;
+}
+
+.bdsm {
+  text-align: center;
+}
+
+.blog-link {
+  text-transform: capitalize;
 }
 
 /* Blog */

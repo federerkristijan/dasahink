@@ -102,10 +102,16 @@ const Domination = () => {
             There is so much yet to be discovered!
             <br />
             Since working in this industry I have directed an artistic erotic
-            film for <a href="https://xconfessions.com/collaborators/directors/erika-lust">Erika Lust</a>, created sex toy sculptures, made props for the
-            wonderful <a href="https://www.sexschoolhub.com/">Sex School</a>, costumes for Shu Lea Chiang's thought
-            provoking film <a href="https://vimeo.com/341132412">3x3x6</a>, have been interviewed about sex work, and met
-            and worked with so so many like minded people.
+            film for{" "}
+            <a href="https://xconfessions.com/collaborators/directors/erika-lust">
+              Erika Lust
+            </a>
+            , created sex toy sculptures, made props for the wonderful{" "}
+            <a href="https://www.sexschoolhub.com/">Sex School</a>, costumes for
+            Shu Lea Chiang's thought provoking film{" "}
+            <a href="https://vimeo.com/341132412">3x3x6</a>, have been
+            interviewed about sex work, and met and worked with so so many like
+            minded people.
             <br />
             There is an ever growing community of proud sex workers, activists,
             and feminists, and so I'm happy to contribute my share even just by
@@ -118,7 +124,7 @@ const Domination = () => {
       <div className="bdsm">
         <div className="bdsm-title">
           <h5>
-            Check out my fun
+            Check out my fun {""}
             <a href="https://www.airbnb.com/experiences/530915">
               BDSM Studio tour in Berlin
             </a>
@@ -126,6 +132,8 @@ const Domination = () => {
           </h5>
           <h6>View On AirbnbExplore the world of Kink with a pro</h6>
         </div>
+      </div>
+      <div className="blog-link">
         <a href="blog">Check out more over here in my blog</a>
       </div>
     </div>
