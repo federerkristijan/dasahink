@@ -149,7 +149,6 @@ span {
 /* Column cards */
 .film-card, .blog-card {
   display: flex;
-  /* border: 2px solid blue; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -244,8 +243,17 @@ h5 {
 }
 
 /* Blog */
+
+.b-title {
+  padding: 3rem;
+  text-align: center;
+}
+
 .b-text {
-  padding: 1rem;
+  padding: 2rem;
+  text-align: justify;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 @media screen and (max-width: 720px) {

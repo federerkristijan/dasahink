@@ -14,7 +14,7 @@ const Blog = () => {
             archetype. This mythical type of women is stern, domineering,
             assertive and stiff. The type of person that a millennial like me
             would avoid at any cost. The type of women who will judge us for our
-            creativity and say how we ‘should’ behave. We opt for this archetype
+            creativity and say how we 'should' behave. We opt for this archetype
             because we think thats the meaning of dominance, and thats the kind
             of symbol we see in our heads from all those years of unconsciously
             consuming BDSM culture. There is however a dominant sadistic type of
@@ -28,7 +28,7 @@ const Blog = () => {
             child in this game usually knows the limits that they can get away
             with, but is also not afraid to explore and go a tiny bit too far.
             He is also taken away by the whimsy and does not calculate his next
-            move, he’s just experimenting with his physical force and three
+            move, he's just experimenting with his physical force and three
             dimensional space, flipping his little brother around and enjoying
             his screams of joy. I recently invited a few girlfriends to join me
             on a Saturday morning session for a special costumer of mine who I
@@ -73,7 +73,7 @@ const Blog = () => {
             being childish, being silly, being theatrical, experimenting, thats
             the idea of play! And BDSM is all about playing. Whenever I make the
             mistake of taking things too seriously I always trip myself up, feel
-            fake and bored. Playing means you don’t always know what you are
+            fake and bored. Playing means you don't always know what you are
             doing, you are exploring your possibilities, experimenting with your
             power. Pretending like I know everything could be fun as a part of
             the game, but if I start to believe it myself I become robotic and
