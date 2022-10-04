@@ -1,4 +1,4 @@
-import * as React from "react";
+  import * as React from "react";
 // import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route , Outlet} from "react-router-dom";
@@ -13,6 +13,8 @@ import Domination from "./views/Domination";
 import Film from "./views/Film";
 import Music from "./views/Music";
 import NotFound from "./NotFound";
+
+// import "./App.css";
 
 import "./App.css";
 

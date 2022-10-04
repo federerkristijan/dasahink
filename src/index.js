@@ -9,7 +9,6 @@ import { QueryClient, QueryClientProvider } from "react-query";
 // import { persistWithLocalStorage } from 'react-query/persist-localstorage-experimental';
 import App from "./App";
 // import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from "./reportWebVitals";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -33,4 +32,3 @@ root.render(
 
 // serviceWorkerRegistration.register();
 
-reportWebVitals();
