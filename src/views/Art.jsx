@@ -1,4 +1,5 @@
 import React from "react";
+import ArtCard from "../components/ArtCard";
 import { artImg } from "./data";
 
 const Art = () => {
@@ -103,6 +104,7 @@ const Art = () => {
           </div>
         </div>
       </div>
+      <ArtCard />
     </div>
   );
 };

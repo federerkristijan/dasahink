@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <div className="footer">
-      <span>(49)17639956749</span>
       <a href="/">hhinkis@gmail.com</a>
       <a href="https://www.instagram.com/dasa_hink/">
         <FontAwesomeIcon icon={faInstagram} color="black" style={{ fontSize: "2rem"}} />
