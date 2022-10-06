@@ -108,8 +108,6 @@ const Blog = () => {
         {blog &&
           blog.map((item) => (
             <div className="b-data" key={item.title}>
-              <div className="b-title-data">{item.title}</div>
-              <div className="b-text-data">{item.text}</div>
               <div className="b-image-data">
                 {item.image && (
                   <img
@@ -118,6 +116,12 @@ const Blog = () => {
                     className="blog-image"
                   />
                 )}
+              </div>
+              <div className="b-title-data">
+                <h2>{item.title}</h2>
+              </div>
+              <div className="b-text-data">
+                <span>{item.text}</span>
               </div>
             </div>
           ))}

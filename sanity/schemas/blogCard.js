@@ -21,8 +21,7 @@ const blogCard = {
       type: "image",
       options: {
         hotspot: true
-      },
-      validation: (Rule) => Rule.required(),
+      }
     }
   ],
 };

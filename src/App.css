@@ -57,9 +57,11 @@ span {
 }
 
 /* Wrappers */
-.App, .home,
+.App,
+.home,
 .art,
-.film, .blog {
+.film,
+.blog {
   /* border: 1px solid red; */
   padding: 1rem 3rem 1rem 3rem;
 }
@@ -108,7 +110,8 @@ span {
   margin: 1rem;
 }
 
-.duo-desc, .trio-desc {
+.duo-desc,
+.trio-desc {
   text-align: center;
   padding: 1rem 5rem;
 }
@@ -147,7 +150,8 @@ span {
 }
 
 /* Column cards */
-.film-card, .blog-card {
+.film-card,
+.blog-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +203,6 @@ h5 {
 
 /* Domination */
 
-
 .subscribe-title {
   display: flex;
   background: white;
@@ -244,16 +247,23 @@ h5 {
 
 /* Blog */
 
-.b-title {
+.b-title, .b-title-data {
   padding: 3rem;
   text-align: center;
 }
 
-.b-text {
+.b-text, .b-text-data {
   padding: 2rem;
   text-align: justify;
   line-height: 2rem;
   letter-spacing: 0.1rem;
+}
+
+.b-data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width: 720px) {
