@@ -10,15 +10,18 @@ const blogCard = {
       validation: (Rule) => Rule.required(),
     },
     {
-      title: "Description",
-      name: "description",
-      type: "string",
+      title: "Text",
+      name: "text",
+      type: "text",
       validation: (Rule) => Rule.required(),
     },
     {
       title: "Image",
       name: "image",
-      type: "string",
+      type: "image",
+      options: {
+        hotspot: true
+      },
       validation: (Rule) => Rule.required(),
     }
   ],
