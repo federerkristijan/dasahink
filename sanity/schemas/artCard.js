@@ -17,6 +17,9 @@ const artCard = {
       title: "Image",
       name: "image",
       type: "image",
+      options: {
+        hotspot: true
+      },
       validation: (Rule) => Rule.required(),
     }
   ],

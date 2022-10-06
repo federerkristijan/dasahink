@@ -16,7 +16,7 @@ const filmCard = {
     {
       title: "Video",
       name: "video",
-      type: "string",
+      type: "file",
       validation: (Rule) => Rule.required(),
     },
     {
