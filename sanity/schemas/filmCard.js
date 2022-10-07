@@ -20,10 +20,9 @@ const filmCard = {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "slug",
-      type: "slug",
-      options: { source: "title" },
-      validation: (Rule) => Rule.required(),
+      title: "Link",
+      name: "link",
+      type: "url",
     },
   ],
 };

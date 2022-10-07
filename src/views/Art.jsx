@@ -1,8 +1,32 @@
-import React from "react";
-import ArtCard from "../components/ArtCard";
+import React, { useEffect, useState } from "react";
 import { artImg } from "./data";
 
+import { sanityClient } from "../lib/client";
+import imageUrlBuilder from "@sanity/image-url";
+
 const Art = () => {
+  const [artData, setArtData] = useState(false);
+
+  const builder = imageUrlBuilder(sanityClient);
+
+  function urlFor(source) {
+    return builder.image(source);
+  }
+
+  useEffect(() => {
+    // GROQ Query
+    sanityClient
+      .fetch(
+        `*[_type == "artCard"] | order(_createdAt asc) {
+        title,
+        description,
+        image
+      }`
+      )
+      .then((data) => setArtData(data))
+      .catch(console.error);
+  }, []);
+
   return (
     <div className="art">
       <div className="art-card">
@@ -103,8 +127,30 @@ const Art = () => {
             </span>
           </div>
         </div>
+        <p>end of hardcode</p>
       </div>
-      <ArtCard />
+      {artData &&
+        artData.map((item) => (
+          <div className="a-data" key={item.title}>
+            <div className="a-image">
+              {item.image && (
+                <img
+                  src={urlFor(item.image).width(200).url()}
+                  alt={item.title}
+                  className="blog-image"
+                />
+              )}
+            </div>
+            <div className="a-text">
+              <div className="a-title">
+                <h2>{item.title}</h2>
+              </div>
+              <div className="a-description">
+                <p>{item.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
     </div>
   );
 };
