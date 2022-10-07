@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import ArtCard from "../components/ArtCard";
 import { artImg } from "./data";
 
 import { sanityClient } from "../lib/client";

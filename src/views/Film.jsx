@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { sanityClient } from "../lib/client";
+import imageUrlBuilder from "@sanity/image-url";
+import { Link } from "react-router-dom";
 
 const Film = () => {
+  const [film, setFilm] = useState(false);
+
+  const builder = imageUrlBuilder(sanityClient);
+
+  function urlFor(source) {
+    return builder.image(source);
+  }
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "filmCard"] | order(_createdAt asc) {
+          title,
+          description,
+          video,
+          link
+        }`
+      )
+      .then((data) => setFilm(data))
+      .catch(console.error);
+  }, []);
+
   return (
     <div className="film">
       <div className="film-title">
@@ -99,15 +124,15 @@ const Film = () => {
           performers: Henrietta Morgenstern Klaus Plötzlich Yukiko Pica Yamane
           Mr. and Mrs. Jones Natasha Nelson Monica Gentile Anne-Christine Settou
         </span>
-        <br/>
+        <br />
         <span>Thanks to:</span>
-        <br/>
+        <br />
         <span>Julian Neville</span>
         <span>Maurice Mersinger</span>
         <span>Claas Redlefsen, KAOS BERLIN</span>
       </div>
       <div className="film-card">
-      <iframe
+        <iframe
           src="https://www.youtube.com/embed/YFfh5BVCJT8"
           frameborder="0"
           allow="autoplay; encrypted-media"
@@ -116,7 +141,7 @@ const Film = () => {
         />
       </div>
       <div className="film-card">
-      <iframe
+        <iframe
           src="https://www.youtube.com/embed/0586YokbDFI"
           frameborder="0"
           allow="autoplay; encrypted-media"
@@ -124,6 +149,30 @@ const Film = () => {
           title="video"
         />
       </div>
+      {film &&
+        film.map((item) => (
+          <div className="f-data" key={item.title}>
+            <div className="f-video">
+              <a href={item.link} target="_blank" rel="noreferrer" >
+                <iframe
+                  src={item.video}
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  title="video"
+                />
+              </a>
+            </div>
+            <div className="f-text">
+              <div className="f-title">
+                {item.title}
+              </div>
+              <div className="f-description">
+                {item.description}
+              </div>
+            </div>
+          </div>
+        ))}
     </div>
   );
 };
