@@ -1,4 +1,4 @@
-/* eslint-disable no-eval */
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
 import { sanityClient } from "../lib/client";
 import imageUrlBuilder from "@sanity/image-url";
@@ -16,7 +16,7 @@ const ArtCard = () => {
     // GROQ Query
     sanityClient
       .fetch(
-        `*[_type == "image"] | order (_createdAt asc) {
+        `*[_type == "artCard"] | order(_createdAt asc) {
         title,
         description,
         image
