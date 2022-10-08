@@ -154,13 +154,13 @@ const Film = () => {
           <div className="f-data" key={item.title}>
             <div className="f-video">
               <a href={item.link} target="_blank" rel="noreferrer" >
-                <iframe
-                  src={item.video}
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  title="video"
-                />
+                <video
+                  width="200rem"
+                  height="200rem"
+                  controls
+                >
+                  <source src={item.video} type="video/mp4" />
+                </video>
               </a>
             </div>
             <div className="f-text">
