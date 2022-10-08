@@ -36,22 +36,22 @@ const Film = () => {
         </h5>
       </div>
       <div className="film-card">
-        <video
+        <iframe
           src="https://www.youtube.com/embed/NkvWDAXCIXw"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
           title="video"
-        ></video>
+        />
       </div>
       <div className="film-card">
-        <video
+        <iframe
           src="https://www.youtube.com/embed/fCZeCFOjdVU"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
           title="video"
-        ></video>
+        />
       </div>
       <div className="film-credits">
         <span>
@@ -91,13 +91,13 @@ const Film = () => {
         </span>
       </div>
       <div className="film-card">
-        <video
+        <iframe
           src="https://www.youtube.com/embed/cgJFMwsoFro"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
           title="video"
-        ></video>
+        />
       </div>
       <div className="film-credits">
         <span>
@@ -132,22 +132,22 @@ const Film = () => {
         <span>Claas Redlefsen, KAOS BERLIN</span>
       </div>
       <div className="film-card">
-        <video
+        <iframe
           src="https://www.youtube.com/embed/YFfh5BVCJT8"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
           title="video"
-        ></video>
+        />
       </div>
       <div className="film-card">
-        <video
+        <iframe
           src="https://www.youtube.com/embed/0586YokbDFI"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
           title="video"
-        ></video>
+        />
       </div>
       {film &&
         film.map((item) => (
@@ -155,10 +155,9 @@ const Film = () => {
             <div className="f-video">
               <a href={item.link} target="_blank" rel="noreferrer" >
                 <video
-                  width="300rem"
-                  height="300rem"
+                  width="400rem"
+                  height="400rem"
                   controls
-                  autoplay
                 >
                   <source src={item.video} type="video/mp4" />
                 </video>
