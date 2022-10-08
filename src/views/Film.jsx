@@ -1,16 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { sanityClient } from "../lib/client";
-import imageUrlBuilder from "@sanity/image-url";
-import { Link } from "react-router-dom";
 
 const Film = () => {
   const [film, setFilm] = useState(false);
-
-  const builder = imageUrlBuilder(sanityClient);
-
-  function urlFor(source) {
-    return builder.image(source);
-  }
 
   useEffect(() => {
     sanityClient
@@ -38,18 +30,18 @@ const Film = () => {
       <div className="film-card">
         <iframe
           src="https://www.youtube.com/embed/NkvWDAXCIXw"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
       <div className="film-card">
         <iframe
           src="https://www.youtube.com/embed/fCZeCFOjdVU"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
@@ -93,9 +85,9 @@ const Film = () => {
       <div className="film-card">
         <iframe
           src="https://www.youtube.com/embed/cgJFMwsoFro"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
@@ -134,18 +126,18 @@ const Film = () => {
       <div className="film-card">
         <iframe
           src="https://www.youtube.com/embed/YFfh5BVCJT8"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
       <div className="film-card">
         <iframe
           src="https://www.youtube.com/embed/0586YokbDFI"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
@@ -158,8 +150,9 @@ const Film = () => {
                   width="400rem"
                   height="400rem"
                   controls
-                >
-                  <source src={item.video} type="video/mp4" />
+                  autoPlay
+                  src={item.video}
+                  type="video/mp4">
                 </video>
               </a>
             </div>
