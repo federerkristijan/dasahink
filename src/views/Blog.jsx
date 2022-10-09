@@ -16,7 +16,7 @@ const Blog = () => {
       .fetch(
         `*[_type == "blog"] | order (_cratedAt asc) {
           title,
-          text,
+          richtext,
           image,
           topic
         }`

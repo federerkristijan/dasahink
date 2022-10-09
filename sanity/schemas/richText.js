@@ -1,9 +1,15 @@
 export default {
-  name: 'richtext',
+  name: 'richText',
   type: 'array',
   of: [
     {
       type: 'block'
+    },
+    {
+      type: 'images'
+    },
+    {
+      type: 'youtube'
     }
   ]
 }

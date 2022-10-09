@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { sanityClient } from "../lib/client";
+import getYouTubeID from 'get-youtube-id';
 
 const Film = () => {
   const [film, setFilm] = useState(false);
@@ -9,14 +10,34 @@ const Film = () => {
       .fetch(
         `*[_type == "filmCard"] | order(_createdAt asc) {
           title,
-          description,
-          video,
+          richText,
           link
         }`
       )
       .then((data) => setFilm(data))
       .catch(console.error);
   }, []);
+
+  const YoutTubePreview = ({ value }) => {
+    const id = getYouTubeID(value.url);
+    const url = `https://www.youtube.com/embed/${id}`;
+
+    if(!id) {
+      return
+      <div>Missing YouTube URL</div>
+    }
+
+    return (
+    <iframe
+      title="YouTube Preview"
+      width="560"
+      height="315"
+      src={url}
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    ></iframe>)
+  };
 
   return (
     <div className="film">
@@ -144,25 +165,21 @@ const Film = () => {
       {film &&
         film.map((item) => (
           <div className="f-data" key={item.title}>
-            <div className="f-video">
-              <a href={item.link} target="_blank" rel="noreferrer" >
+            {/* <div className="f-video">
+              <a href={item.link} target="_blank" rel="noreferrer">
                 <video
                   width="400rem"
                   height="400rem"
                   controls
                   autoPlay
                   src={item.video}
-                  type="video/mp4">
-                </video>
+                  type="video/mp4"
+                ></video>
               </a>
-            </div>
+            </div> */}
             <div className="f-text">
-              <div className="f-title">
-                {item.title}
-              </div>
-              <div className="f-description">
-                {item.description}
-              </div>
+              <div className="f-title">{item.title}</div>
+              <YoutTubePreview/>
             </div>
           </div>
         ))}

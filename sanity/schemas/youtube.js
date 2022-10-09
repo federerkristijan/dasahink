@@ -8,5 +8,11 @@ export default {
       type: 'url',
       title: 'URL'
     }
-  ]
+  ],
+  preview: {
+    select: {
+      url: 'url',
+    }
+  },
+  component: 'YouTubePreview'
 }

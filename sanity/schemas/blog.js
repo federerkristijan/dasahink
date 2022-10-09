@@ -10,18 +10,14 @@ const blog = {
       validation: (Rule) => Rule.required(),
     },
     {
-      title: "Text",
-      name: "text",
-      type: "text",
-      validation: (Rule) => Rule.required(),
+      name: 'body',
+      type: 'richText',
+      title: 'Film Card'
     },
     {
       title: "Image",
       name: "image",
-      type: "image",
-      options: {
-        hotspot: true
-      }
+      type: "image"
     },
     {
       name: 'topic',
