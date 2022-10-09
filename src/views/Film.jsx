@@ -1,6 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { sanityClient } from "../lib/client";
-import getYouTubeID from 'get-youtube-id';
+// import { YouTubePreview } from "../../sanity/sanity/schemas/youtube";
+// import getYouTubeID from "get-youtube-id";
+
+// const YoutTubePreview = ({ value, props }) => {
+//   const id = getYouTubeID(value.url);
+//   const url = `https://www.youtube.com/embed/${id}`;
+
+//   if (!id) {
+//     return <div>Missing YouTube URL</div>;
+//   }
+
+//   return (
+//     <iframe
+//       title="YouTube Preview"
+//       width="560"
+//       height="315"
+//       src={url}
+//       frameborder="0"
+//       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+//     ></iframe>
+//   );
+// };
 
 const Film = () => {
   const [film, setFilm] = useState(false);
@@ -10,34 +31,14 @@ const Film = () => {
       .fetch(
         `*[_type == "filmCard"] | order(_createdAt asc) {
           title,
-          richText,
-          link
+          richText
         }`
       )
       .then((data) => setFilm(data))
       .catch(console.error);
   }, []);
 
-  const YoutTubePreview = ({ value }) => {
-    const id = getYouTubeID(value.url);
-    const url = `https://www.youtube.com/embed/${id}`;
 
-    if(!id) {
-      return
-      <div>Missing YouTube URL</div>
-    }
-
-    return (
-    <iframe
-      title="YouTube Preview"
-      width="560"
-      height="315"
-      src={url}
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    ></iframe>)
-  };
 
   return (
     <div className="film">
@@ -179,7 +180,9 @@ const Film = () => {
             </div> */}
             <div className="f-text">
               <div className="f-title">{item.title}</div>
-              <YoutTubePreview/>
+              {/* <div className="youtube-preview">
+                <YouTubePreview/>
+              </div> */}
             </div>
           </div>
         ))}

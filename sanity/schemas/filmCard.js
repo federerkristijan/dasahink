@@ -14,7 +14,6 @@ const filmCard = {
       title: 'Film Card'
     },
     {
-      title: "Link",
       name: "link",
       type: "url",
     },

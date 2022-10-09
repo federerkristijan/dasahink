@@ -15,11 +15,6 @@ const blog = {
       title: 'Film Card'
     },
     {
-      title: "Image",
-      name: "image",
-      type: "image"
-    },
-    {
       name: 'topic',
       type: 'reference',
       to: [

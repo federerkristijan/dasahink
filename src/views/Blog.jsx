@@ -16,8 +16,11 @@ const Blog = () => {
       .fetch(
         `*[_type == "blog"] | order (_cratedAt asc) {
           title,
-          richtext,
-          image,
+          richText{
+            block,
+            images,
+            youtube
+          },
           topic
         }`
       )
@@ -43,7 +46,7 @@ const Blog = () => {
                 <h2>{item.title}</h2>
               </div>
               <div className="b-text-data">
-                <span>{item.text}</span>
+                <span>{item.richText}</span>
               </div>
               <div className="b-topic">
                 <span>{item.topic}</span>
