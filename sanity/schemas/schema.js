@@ -9,6 +9,8 @@ import filmCard from "./filmCard";
 import blogCard from "./blogCard";
 import dominationCard from "./dominationCard";
 import musicCard from "./musicCard";
+import youtube from "./youtube";
+import richText from "./richText";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -23,5 +25,7 @@ export default createSchema({
     dominationCard,
     filmCard,
     artCard,
+    youtube,
+    richText
   ]),
 });

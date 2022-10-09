@@ -14,6 +14,11 @@ const filmCard = {
       type: "string",
     },
     {
+      name: 'body',
+      type: 'richtext',
+      title: 'Film Card'
+    },
+    {
       title: "Video",
       name: "video",
       type: "file",
