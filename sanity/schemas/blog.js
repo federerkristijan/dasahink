@@ -1,7 +1,7 @@
-const blogCard = {
-  name: "blogCard",
-  title: "BlogCard",
+const blog = {
+  name: "blog",
   type: "document",
+  title: "Blog",
   fields: [
     {
       title: "Title",
@@ -22,8 +22,17 @@ const blogCard = {
       options: {
         hotspot: true
       }
+    },
+    {
+      name: 'topic',
+      type: 'reference',
+      to: [
+        {
+          type: 'topic'
+        }
+      ]
     }
   ],
 };
 
-export default blogCard;
+export default blog;
