@@ -6,9 +6,14 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import artCard from "./artCard";
 import filmCard from "./filmCard";
-import blogCard from "./blogCard";
+import blog from "./blog";
 import dominationCard from "./dominationCard";
 import musicCard from "./musicCard";
+import youtube from "./youtube";
+import richText from "./richText";
+import topic from "./topic";
+import home from "./home";
+import image from "./image";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -17,11 +22,15 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    ,
-    blogCard,
+    home,
+    blog,
     musicCard,
     dominationCard,
     filmCard,
     artCard,
+    youtube,
+    richText,
+    topic,
+    image
   ]),
 });

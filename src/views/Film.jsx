@@ -1,5 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { sanityClient } from "../lib/client";
+// import { YouTubePreview } from "../../sanity/sanity/schemas/youtube";
+// import getYouTubeID from "get-youtube-id";
+
+// const YoutTubePreview = ({ value, props }) => {
+//   const id = getYouTubeID(value.url);
+//   const url = `https://www.youtube.com/embed/${id}`;
+
+//   if (!id) {
+//     return <div>Missing YouTube URL</div>;
+//   }
+
+//   return (
+//     <iframe
+//       title="YouTube Preview"
+//       width="560"
+//       height="315"
+//       src={url}
+//       frameborder="0"
+//       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+//     ></iframe>
+//   );
+// };
 
 const Film = () => {
   const [film, setFilm] = useState(false);
@@ -9,14 +31,14 @@ const Film = () => {
       .fetch(
         `*[_type == "filmCard"] | order(_createdAt asc) {
           title,
-          description,
-          video,
-          link
+          richText
         }`
       )
       .then((data) => setFilm(data))
       .catch(console.error);
   }, []);
+
+
 
   return (
     <div className="film">
@@ -144,25 +166,23 @@ const Film = () => {
       {film &&
         film.map((item) => (
           <div className="f-data" key={item.title}>
-            <div className="f-video">
-              <a href={item.link} target="_blank" rel="noreferrer" >
+            {/* <div className="f-video">
+              <a href={item.link} target="_blank" rel="noreferrer">
                 <video
                   width="400rem"
                   height="400rem"
                   controls
                   autoPlay
                   src={item.video}
-                  type="video/mp4">
-                </video>
+                  type="video/mp4"
+                ></video>
               </a>
-            </div>
+            </div> */}
             <div className="f-text">
-              <div className="f-title">
-                {item.title}
-              </div>
-              <div className="f-description">
-                {item.description}
-              </div>
+              <div className="f-title">{item.title}</div>
+              {/* <div className="youtube-preview">
+                <YouTubePreview/>
+              </div> */}
             </div>
           </div>
         ))}
