@@ -6,13 +6,12 @@ const blog = {
     {
       title: "Title",
       name: "title",
-      type: "string",
-      validation: (Rule) => Rule.required(),
+      type: "string"
     },
     {
       name: 'body',
       type: 'richText',
-      title: 'Film Card'
+      title: 'Blog'
     },
     {
       name: 'topic',
