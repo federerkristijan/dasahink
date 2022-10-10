@@ -14,9 +14,9 @@ const Blog = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "blog"] | order (_cratedAt asc) {
+        `*[_type == "blog"] | order(_cratedAt asc) {
           title,
-          richText{
+          'richText':{
             block,
             images,
             youtube
