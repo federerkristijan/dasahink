@@ -9,29 +9,29 @@ const Blog = (props) => {
 
   const builder = imageUrlBuilder(sanityClient);
 
-  const richText = {
-    types: {
-      // defining image block
-      images: ({ value }) => <img src={value.imageUrl} />,
-      callToAction: ({ value, isInline }) =>
-        isInline ? (
-          <a href={value.url}>{value.text}</a>
-        ) : (
-          <div className="callToAction">{value.text}</div>
-        ),
-    },
-    marks: {
-      // defining link block
-      link: ({children, value}) => {
-        const rel = !value.href.startsWith('/') ? 'noreferrer noopener' : undefined
-        return (
-          <a href={value.href} rel={rel} >
-            {children}
-          </a>
-        )
-      }
-    }
-  };
+  // const richText = {
+  //   types: {
+  //     // defining image block
+  //     images: ({ value }) => <img src={value.imageUrl} />,
+  //     callToAction: ({ value, isInline }) =>
+  //       isInline ? (
+  //         <a href={value.url}>{value.text}</a>
+  //       ) : (
+  //         <div className="callToAction">{value.text}</div>
+  //       ),
+  //   },
+  //   marks: {
+  //     // defining link block
+  //     link: ({children, value}) => {
+  //       const rel = !value.href.startsWith('/') ? 'noreferrer noopener' : undefined
+  //       return (
+  //         <a href={value.href} rel={rel} >
+  //           {children}
+  //         </a>
+  //       )
+  //     }
+  //   }
+  // };
 
 
   function urlFor(source) {
