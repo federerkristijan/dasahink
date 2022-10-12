@@ -1,6 +1,6 @@
-const filmCard = {
-  name: "filmCard",
-  title: "FilmCard",
+const film = {
+  name: "film",
+  title: "Fil",
   type: "document",
   fields: [
     {
@@ -11,7 +11,7 @@ const filmCard = {
     {
       name: 'body',
       type: 'richText',
-      title: 'Film Card'
+      title: 'Film'
     },
     {
       name: "link",
@@ -20,4 +20,4 @@ const filmCard = {
   ],
 };
 
-export default filmCard;
+export default film;
