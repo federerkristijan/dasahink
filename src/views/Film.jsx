@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { sanityClient } from "../lib/client";
-// import { YouTubePreview } from "../../sanity/sanity/schemas/youtube";
+// import YouTubePreview from "../../sanity/schemas/youtube";
 // import getYouTubeID from "get-youtube-id";
 
-// const YoutTubePreview = ({ value, props }) => {
+// const YouTubePreview = ({ value, props }) => {
 //   const id = getYouTubeID(value.url);
 //   const url = `https://www.youtube.com/embed/${id}`;
 
@@ -181,6 +181,9 @@ const Film = () => {
             </div>
             <div className="f-text">
               <div className="f-title">{item.title}</div>
+              <div className="youtube-preview">
+                {/* <YouTubePreview/> */}
+              </div>
             </div>
           </div>
         ))}

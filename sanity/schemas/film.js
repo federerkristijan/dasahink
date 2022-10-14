@@ -11,7 +11,7 @@ const film = {
     {
       name: 'body',
       type: 'richText',
-      title: 'Film Card'
+      title: 'Film'
     },
     {
       name: "link",

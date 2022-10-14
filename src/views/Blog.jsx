@@ -1,11 +1,38 @@
 import React, { useEffect, useState } from "react";
-import {sanityClient} from "../lib/client";
+import { sanityClient } from "../lib/client";
 import imageUrlBuilder from "@sanity/image-url";
+// import { PortableText } from "@portabletext/react";
 
-const Blog = () => {
-  const [blog, setBlog] = useState([]);
+const Blog = (props) => {
+  const [blog, setBlog] = useState(false);
 
   const builder = imageUrlBuilder(sanityClient);
+
+  // const richText = {
+  //   types: {
+  //     // defining image block
+  //     images: ({ value }) => <img src={value.imageUrl} alt="" />,
+  //     callToAction: ({ value, isInline }) =>
+  //       isInline ? (
+  //         <a href={value.url}>{value.text}</a>
+  //       ) : (
+  //         <div className="callToAction">{value.text}</div>
+  //       ),
+  //   },
+  //   marks: {
+  //     // defining link block
+  //     link: ({ children, value }) => {
+  //       const rel = !value.href.startsWith("/")
+  //         ? "noreferrer noopener"
+  //         : undefined;
+  //       return (
+  //         <a href={value.href} rel={rel}>
+  //           {children}
+  //         </a>
+  //       );
+  //     },
+  //   },
+  // };
 
   function urlFor(source) {
     return builder.image(source);
@@ -45,8 +72,9 @@ const Blog = () => {
                 <span>{item.text}</span>
               </div>
             </div>
-          ))}
-      </div>
+          </div>
+        ))}
+    </>
   );
 };
 
