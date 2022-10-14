@@ -1,6 +1,6 @@
 const film = {
   name: "film",
-  title: "Fil",
+  title: "film",
   type: "document",
   fields: [
     {

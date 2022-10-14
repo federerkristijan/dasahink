@@ -43,10 +43,8 @@ const Blog = (props) => {
       .fetch(
         `*[_type == "blog"] | order(_cratedAt asc) {
           title,
-          'richText': {
-            block
-          },
-          topic
+          text,
+          image
         }`
       )
       .then((data) => setBlog(data))
@@ -54,33 +52,25 @@ const Blog = (props) => {
   }, []);
 
   return (
-    <>
-      {blog &&
-        blog.map((item) => (
-          <div className="b-data" key={item.title}>
-            <div className="b-image-data">
-              {item.image && (
-                <img
-                  src={urlFor(item.image).width(200).url()}
-                  alt={item.title}
-                  className="blog-image"
-                />
-              )}
-            </div>
-            <div className="b-title-data">
-              <h2>{item.title}</h2>
-            </div>
-            {/* {item.richText &&
-               item.richText.map((item) => (
-                 <div className="b-text-data" key={item.richText} >
-                   {item.richText}
-                 </div>
-               ))} */}
-            <div className="blog">
-              {/* {PortableText && <PortableText value={props.value} components={richText} />} */}
-            </div>
-            <div className="b-topic">
-              <span>{item.topic}</span>
+    <div className="blog">
+        {blog &&
+          blog.map((item) => (
+            <div className="b-data" key={item.title}>
+              <div className="b-image-data">
+                {item.image && (
+                  <img
+                    src={urlFor(item.image).width(200).url()}
+                    alt={item.title}
+                    className="blog-image"
+                  />
+                )}
+              </div>
+              <div className="b-title-data">
+                <h2>{item.title}</h2>
+              </div>
+              <div className="b-text-data">
+                <span>{item.text}</span>
+              </div>
             </div>
           </div>
         ))}

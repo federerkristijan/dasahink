@@ -9,18 +9,17 @@ const blog = {
       type: "string"
     },
     {
-      name: 'body',
-      type: 'richText',
-      title: 'Blog'
+      name: 'text',
+      type: 'text',
+      title: 'Text'
     },
     {
-      name: 'topic',
-      type: 'reference',
-      to: [
-        {
-          type: 'topic'
-        }
-      ]
+      name: 'image',
+      type: 'image',
+      title: 'Image',
+      options: {
+        hotspot: true
+      }
     }
   ],
 };
