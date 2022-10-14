@@ -10,9 +10,17 @@ const blog = {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'body',
-      type: 'richText',
-      title: 'Film Card'
+      name: 'text',
+      type: 'text',
+      title: 'Text'
+    },
+    {
+      name: 'image',
+      type: 'image',
+      title: 'Image',
+      options: {
+        hotspot: true
+      }
     },
     {
       name: 'topic',
