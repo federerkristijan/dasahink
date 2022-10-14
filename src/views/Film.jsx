@@ -29,7 +29,7 @@ const Film = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "filmCard"] | order(_createdAt asc) {
+        `*[_type == "film"] | order(_createdAt asc) {
           title,
           richText
         }`
@@ -163,10 +163,11 @@ const Film = () => {
           title="video"
         />
       </div>
+      {/* <div className="data">
       {film &&
         film.map((item) => (
           <div className="f-data" key={item.title}>
-            {/* <div className="f-video">
+            <div className="f-video">
               <a href={item.link} target="_blank" rel="noreferrer">
                 <video
                   width="400rem"
@@ -177,15 +178,13 @@ const Film = () => {
                   type="video/mp4"
                 ></video>
               </a>
-            </div> */}
+            </div>
             <div className="f-text">
               <div className="f-title">{item.title}</div>
-              {/* <div className="youtube-preview">
-                <YouTubePreview/>
-              </div> */}
             </div>
           </div>
         ))}
+      </div> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
-const filmCard = {
-  name: "filmCard",
-  title: "FilmCard",
+const film = {
+  name: "film",
+  title: "film",
   type: "document",
   fields: [
     {
@@ -20,4 +20,4 @@ const filmCard = {
   ],
 };
 
-export default filmCard;
+export default film;
