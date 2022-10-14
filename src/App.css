@@ -78,13 +78,13 @@ span {
 }
 
 .home-text {
-  max-width: 30vw;
-  /* border: 1px solid black; */
+  max-width: 25vw;
+  margin-left: 1.5rem;
 }
 
 .home-image > img {
-  height: 85vh;
-  width: 28vw;
+  height: 77vh;
+  width: 31vw;
 }
 
 /* Art */
