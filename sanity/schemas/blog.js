@@ -21,15 +21,6 @@ const blog = {
       options: {
         hotspot: true
       }
-    },
-    {
-      name: 'topic',
-      type: 'reference',
-      to: [
-        {
-          type: 'topic'
-        }
-      ]
     }
   ],
 };

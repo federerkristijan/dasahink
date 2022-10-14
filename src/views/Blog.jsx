@@ -3,7 +3,7 @@ import {sanityClient} from "../lib/client";
 import imageUrlBuilder from "@sanity/image-url";
 
 const Blog = () => {
-  const [blog, setBlog] = useState(false);
+  const [blog, setBlog] = useState([]);
 
   const builder = imageUrlBuilder(sanityClient);
 
@@ -17,8 +17,7 @@ const Blog = () => {
         `*[_type == "blog"] | order(_cratedAt asc) {
           title,
           text,
-          image,
-          topic
+          image
         }`
       )
       .then((data) => setBlog(data))
@@ -44,9 +43,6 @@ const Blog = () => {
               </div>
               <div className="b-text-data">
                 <span>{item.text}</span>
-              </div>
-              <div className="b-topic">
-                <span>{item.topic}</span>
               </div>
             </div>
           ))}

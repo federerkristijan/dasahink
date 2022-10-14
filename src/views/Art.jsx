@@ -137,7 +137,7 @@ const Art = () => {
                 <img
                   src={urlFor(item.image).width(200).url()}
                   alt={item.title}
-                  className="blog-image"
+                  className="art-image"
                 />
               )}
             </div>
