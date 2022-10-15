@@ -72,9 +72,8 @@ const Blog = (props) => {
                 <span>{item.text}</span>
               </div>
             </div>
-          </div>
         ))}
-    </>
+    </div>
   );
 };
 

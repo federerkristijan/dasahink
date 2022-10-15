@@ -38,8 +38,6 @@ const Film = () => {
       .catch(console.error);
   }, []);
 
-
-
   return (
     <div className="film">
       <div className="film-title">
@@ -163,33 +161,34 @@ const Film = () => {
           title="video"
         />
       </div>
-      {/* <div className="data">
-      {film &&
-        film.map((item) => (
-          <div className="f-data" key={item.title}>
-            <div className="f-video">
-              <a href={item.link} target="_blank" rel="noreferrer">
-                <video
-                  width="400rem"
-                  height="400rem"
-                  controls
-                  autoPlay
-                  src={item.video}
-                  type="video/mp4"
-                ></video>
-              </a>
-            </div>
-            <div className="f-text">
-              <div className="f-title">{item.title}</div>
-              <div className="youtube-preview">
-                {/* <YouTubePreview/> */}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div> */}
     </div>
   );
 };
 
 export default Film;
+
+{/* <div className="data">
+  {film &&
+    film.map((item) => (
+      <div className="f-data" key={item.title}>
+        <div className="f-video">
+          <a href={item.link} target="_blank" rel="noreferrer">
+            <video
+              width="400rem"
+              height="400rem"
+              controls
+              autoPlay
+              src={item.video}
+              type="video/mp4"
+            ></video>
+          </a>
+        </div>
+        <div className="f-text">
+          <div className="f-title">{item.title}</div>
+          <div className="youtube-preview">
+            <YouTubePreview />
+          </div>
+        </div>
+      </div>
+    ))}
+</div>; */}
