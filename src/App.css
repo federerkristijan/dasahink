@@ -66,14 +66,12 @@ span {
 .art,
 .film,
 .blog {
-  /* border: 1px solid red; */
   padding: 1rem 3rem 1rem 3rem;
 }
 
 /* Row Cards */
 .home-card {
   display: flex;
-  /* border: 2px solid blue; */
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
@@ -282,6 +280,41 @@ h5 {
 }
 
 @media screen and (max-width: 720px) {
+
+  /* wrappers */
+  .App,
+  .home,
+  .art,
+  .film,
+  .blog {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+
+  .home-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 0;
+  }
+
+  .home-text {
+    display: contents;
+  }
+
+  .home-image {
+    width: 77vw;
+  }
+
+  .home-image > img {
+    width: 65%;
+    height: auto;
+    margin-left: 3rem;
+  }
+
+  span {
+    line-height: 1rem;
+  }
+
   iframe {
     width: 100%;
     min-height: 95%;
