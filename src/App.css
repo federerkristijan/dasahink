@@ -293,7 +293,6 @@ h5 {
   .home-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     padding: 0;
   }
 
@@ -309,6 +308,10 @@ h5 {
     width: 65%;
     height: auto;
     margin-left: 3rem;
+  }
+
+  .form-control {
+    min-width: 55vw!important;
   }
 
   span {

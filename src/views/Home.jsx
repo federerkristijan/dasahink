@@ -34,7 +34,7 @@ const Home = () => {
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className="btn">
             Subscribe to mailing list
           </Button>
         </Form>
