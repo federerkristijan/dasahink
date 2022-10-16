@@ -97,9 +97,9 @@ const Art = () => {
             <img src={require("../assets/images/art/art9.jpg")} alt="" />
           </div>
           <div className="art-trio">
-            <img src={require("../assets/images/art/art16.png")} alt="" height={"250px"} min-width={"160px"} />
-            <img src={require("../assets/images/art/art17.jpg")} alt="" height={"250px"} min-width={"160px"} />
-            <img src={require("../assets/images/art/art18.jpg")} alt="" height={"250px"} min-width={"160px"} />
+            <img src={require("../assets/images/art/art16.png")} alt="" height={"auto"} min-width={"160px"} />
+            <img src={require("../assets/images/art/art17.jpg")} alt="" height={"auto"} min-width={"160px"} />
+            <img src={require("../assets/images/art/art18.jpg")} alt="" height={"auto"} min-width={"160px"} />
           </div>
           <div className="trio-desc">
             <span>
