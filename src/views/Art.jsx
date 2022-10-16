@@ -74,9 +74,8 @@ const Art = () => {
               myself
             </span>
           </div>
-          <div className="art-duo">
-            <img src={require("../assets/images/art/art10.jpg")} alt="" />
-            <img src={require("../assets/images/art/art10.jpg")} alt="" />
+          <div className="art-image">
+            <img src={require("../assets/images/art/art10.jpg")} alt="" height={ "auto" } />
           </div>
           <div className="duo-desc">
               <span>
@@ -96,10 +95,12 @@ const Art = () => {
             <img src={require("../assets/images/art/art8.jpg")} alt="" />
             <img src={require("../assets/images/art/art9.jpg")} alt="" />
           </div>
-          <div className="art-trio">
-            <img src={require("../assets/images/art/art16.png")} alt="" height={"250px"} min-width={"160px"} />
-            <img src={require("../assets/images/art/art17.jpg")} alt="" height={"250px"} min-width={"160px"} />
-            <img src={require("../assets/images/art/art18.jpg")} alt="" height={"250px"} min-width={"160px"} />
+          <div className="art-duo">
+            <img src={require("../assets/images/art/art16.png")} alt="" height={"auto"} min-width={ "40vw" } />
+            <img src={require("../assets/images/art/art17.jpg")} alt="" height={"auto"} min-width={ "40vw" } />
+          </div>
+          <div className="art-image">
+            <img src={require("../assets/images/art/art18.jpg")} alt="" height={"auto"} min-width={"40vw"} />
           </div>
           <div className="trio-desc">
             <span>
@@ -107,7 +108,7 @@ const Art = () => {
               exhibition “Adornism”
             </span>
             <br />
-            <span>Music, performance and direction: Hadas Hinkis</span>
+            <span>Music, performance and direction: Dasa Hink</span>
             <br />
             <span>
               Camera and light design:{" "}
@@ -127,7 +128,6 @@ const Art = () => {
             </span>
           </div>
         </div>
-        <p>end of hardcode</p>
       </div>
       {artData &&
         artData.map((item) => (
