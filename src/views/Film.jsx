@@ -70,7 +70,7 @@ const Film = () => {
           Above is the trailer for a fantasy erotic short I shot for{" "}
           <a href="https://erikalust.com/">Erika Lust Xconfessions</a>.
         </span>
-        <span>Written and directed by: Hadas Hinkis</span>
+        <span>Written and directed by: Dasa Hink</span>
         <span>
           Cinematography:{" "}
           <a href="https://tobijall.wixsite.com/my-site">Tobi Jall</a>
@@ -115,14 +115,14 @@ const Film = () => {
         <span>
           Virus, video clip for <a href="https://www.anatopia.org/">Anatopia</a>
         </span>
-        <span>Director: Hadas Hinkis</span>
+        <span>Director: Dasa Hink</span>
         <span>Director of Photography: Jonas Römmig</span>
         <span>Gaffer: Alex Hassenkamp</span>
         <span>
           Electricians: Franz Weinland, Carina Neubohn, Mathieu von Charmier
         </span>
         <span>1.AD: Halea Isabella Kala</span>
-        <span>Costumes: Hadas Hinkis, Rebecca Allen</span>
+        <span>Costumes: Dasa Hink, Rebecca Allen</span>
         <span>Set: Chika Takabayashi, Angela Riviera</span>
         <span>
           Set Assistance: Clio Flego, Anna Wachsmuth, Andrea Portioli, Isobel
