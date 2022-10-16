@@ -4,9 +4,6 @@ body {
 }
 
 .App {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* text-align: center; */
   padding: 2rem 4rem;
 }
 
@@ -21,12 +18,19 @@ span {
   width: 80%;
 }
 
+h5 {
+  text-align: center;
+}
+
+p {
+  margin-top: 1rem;
+}
+
 /* Navbar */
 .App > .navbar {
   display: flex;
   justify-content: space-between;
   margin: 2rem 1.5rem;
-  /* border: 2px solid red; */
 }
 
 .navbar .navbar-collapse {
@@ -79,6 +83,7 @@ span {
   padding: 1rem 5rem;
 }
 
+/* Home */
 .home-text {
   max-width: 25vw;
   margin-left: 1.5rem;
@@ -91,7 +96,8 @@ span {
 
 /* Art */
 .art-card {
-  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
   margin: 2rem 4rem;
   max-width: fit-content;
 }
@@ -109,7 +115,7 @@ span {
   display: flex;
   max-width: 47%;
   gap: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .duo-desc,
@@ -121,8 +127,9 @@ span {
 .art-trio {
   display: flex;
   max-width: 30%;
+  height: auto;
   gap: 1.8rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .a-data {
@@ -185,9 +192,6 @@ iframe {
   padding: 1rem 6rem;
 }
 
-h5 {
-  text-align: center;
-}
 
 .film-credits {
   display: flex;
@@ -312,6 +316,19 @@ h5 {
 
   .form-control {
     min-width: 55vw!important;
+  }
+
+  .art-title {
+    padding: 1rem 1rem;
+  }
+
+  .art-card {
+    margin: 2rem 2rem;
+  }
+
+  .duo-desc, .trio-desc {
+    text-align: center;
+    padding: 1rem 1rem;
   }
 
   span {

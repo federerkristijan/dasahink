@@ -74,9 +74,8 @@ const Art = () => {
               myself
             </span>
           </div>
-          <div className="art-duo">
-            <img src={require("../assets/images/art/art10.jpg")} alt="" />
-            <img src={require("../assets/images/art/art10.jpg")} alt="" />
+          <div className="art-image">
+            <img src={require("../assets/images/art/art10.jpg")} alt="" height={ "auto" } />
           </div>
           <div className="duo-desc">
               <span>
@@ -127,7 +126,6 @@ const Art = () => {
             </span>
           </div>
         </div>
-        <p>end of hardcode</p>
       </div>
       {artData &&
         artData.map((item) => (
