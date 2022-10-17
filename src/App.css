@@ -292,6 +292,14 @@ iframe {
     padding: 1rem 0.5rem 1rem 0.5rem;
   }
 
+  .footer > .email {
+    margin-right: 3rem;
+  }
+
+  .footer > a {
+    margin-right: 1rem;
+  }
+
   .home-card {
     display: flex;
     flex-direction: column;
