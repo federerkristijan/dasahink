@@ -113,7 +113,7 @@ p {
 
 .art-duo {
   display: flex;
-  max-width: 47%;
+  max-width: 48%;
   gap: 1rem;
   margin: 1rem 0;
 }
@@ -126,9 +126,9 @@ p {
 
 .art-trio {
   display: flex;
-  max-width: 30%;
+  max-width: 31%;
   height: auto;
-  gap: 1.8rem;
+  gap: 1rem;
   margin: 1rem 0;
 }
 
@@ -191,7 +191,6 @@ iframe {
   align-items: center;
   padding: 1rem 6rem;
 }
-
 
 .film-credits {
   display: flex;
@@ -284,7 +283,6 @@ iframe {
 }
 
 @media screen and (max-width: 720px) {
-
   /* wrappers */
   .App,
   .home,
@@ -315,7 +313,7 @@ iframe {
   }
 
   .form-control {
-    min-width: 55vw!important;
+    min-width: 55vw !important;
   }
 
   .art-title {
@@ -326,7 +324,16 @@ iframe {
     margin: 2rem 2rem;
   }
 
-  .duo-desc, .trio-desc {
+  .art-image {
+    padding: 1rem 1rem;
+  }
+
+  .art-trio {
+    max-width: 30%;
+  }
+
+  .duo-desc,
+  .trio-desc {
     text-align: center;
     padding: 1rem 1rem;
   }

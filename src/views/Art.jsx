@@ -75,58 +75,74 @@ const Art = () => {
             </span>
           </div>
           <div className="art-image">
-            <img src={require("../assets/images/art/art10.jpg")} alt="" height={ "auto" } />
+            <img
+              src={require("../assets/images/art/art10.jpg")}
+              alt=""
+              height={"auto"}
+            />
           </div>
           <div className="duo-desc">
-              <span>
-                This sculpture, the PetPod, is a redesign for the sex toy:
-                Fleshlight. It is a usable sculpture who have traveled with me
-                to different talks and exhibitions.
-              </span>
+            <span>
+              This sculpture, the PetPod, is a redesign for the sex toy:
+              Fleshlight. It is a usable sculpture who have traveled with me to
+              different talks and exhibitions.
+            </span>
           </div>
           <div className="art-duo">
             <img src={require("../assets/images/art/art15a.jpg")} alt="" />
-            <img src={require("../assets/images/art/art15b.jpg")} alt="" style={{ minWidth:"32vw" }}  />
+            <img src={require("../assets/images/art/art15b.jpg")} alt="" />
           </div>
         </div>
+        <div className="art-trio">
+          <img src={require("../assets/images/art/art7.jpg")} alt="" />
+          <img src={require("../assets/images/art/art8.jpg")} alt="" />
+          <img src={require("../assets/images/art/art9.jpg")} alt="" />
+        </div>
+        <div className="art-duo">
+          <img
+            src={require("../assets/images/art/art16.png")}
+            alt=""
+            height={"auto"}
+            min-width={"40vw"}
+          />
+          <img
+            src={require("../assets/images/art/art17.jpg")}
+            alt=""
+            height={"auto"}
+            min-width={"40vw"}
+          />
+        </div>
         <div className="art-image">
-          <div className="art-trio">
-            <img src={require("../assets/images/art/art7.jpg")} alt="" />
-            <img src={require("../assets/images/art/art8.jpg")} alt="" />
-            <img src={require("../assets/images/art/art9.jpg")} alt="" />
-          </div>
-          <div className="art-duo">
-            <img src={require("../assets/images/art/art16.png")} alt="" height={"auto"} min-width={ "40vw" } />
-            <img src={require("../assets/images/art/art17.jpg")} alt="" height={"auto"} min-width={ "40vw" } />
-          </div>
-          <div className="art-image">
-            <img src={require("../assets/images/art/art18.jpg")} alt="" height={"auto"} min-width={"40vw"} />
-          </div>
-          <div className="trio-desc">
-            <span>
-              Circles and Lines is a video installation I created for the
-              exhibition “Adornism”
-            </span>
-            <br />
-            <span>Music, performance and direction: Dasa Hink</span>
-            <br />
-            <span>
-              Camera and light design:{" "}
-              <a href="www.tomrotsch.com">Tom Rotsch</a>
-            </span>
-            <br />
-            <span>
-              Hands:{" "}
-              <a href="https://www.instagram.com/theomegapoint0/?hl=en">
-                Alexandra Moon
-              </a>
-            </span>
-            <br />
-            <span>
-              A project with photographer{" "}
-              <a href="https://www.instagram.com/epiczambo/">Dark as Ink</a>
-            </span>
-          </div>
+          <img
+            src={require("../assets/images/art/art18.jpg")}
+            alt=""
+            height={"auto"}
+            min-width={"40vw"}
+          />
+        </div>
+        <div className="trio-desc">
+          <span>
+            Circles and Lines is a video installation I created for the
+            exhibition “Adornism”
+          </span>
+          <br />
+          <span>Music, performance and direction: Dasa Hink</span>
+          <br />
+          <span>
+            Camera and light design: <a href="www.tomrotsch.com">Tom Rotsch</a>
+          </span>
+          <br />
+          <span>
+            Hands:{" "}
+            <a href="https://www.instagram.com/theomegapoint0/?hl=en">
+              Alexandra Moon
+            </a>
+          </span>
+          <br />
+          <span>
+            A project with photographer{" "}
+            <a href="https://www.instagram.com/epiczambo/">Dark as Ink</a>
+          </span>
         </div>
       </div>
       {artData &&
