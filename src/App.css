@@ -69,7 +69,8 @@ p {
 .home,
 .art,
 .film,
-.blog {
+.blog,
+.domination {
   padding: 1rem 3rem 1rem 3rem;
 }
 
@@ -179,7 +180,6 @@ p {
 }
 
 /* Film */
-
 iframe {
   width: 80%;
   min-height: 75vh;
@@ -217,7 +217,6 @@ iframe {
 }
 
 /* Domination */
-
 .subscribe-title {
   display: flex;
   flex-direction: column;
@@ -229,7 +228,7 @@ iframe {
   bottom: 16rem;
   width: 33vw;
   border: 1px solid black;
-  background: rgba(187, 180, 180, 0.545);
+  background: rgba(187 180 180 / 87%);
 }
 
 .domination-cover-image > img {
