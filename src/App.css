@@ -292,6 +292,7 @@ iframe {
     padding: 1rem 0.5rem 1rem 0.5rem;
   }
 
+  /* footer */
   .footer > .email {
     margin-right: 3rem;
   }
@@ -300,6 +301,7 @@ iframe {
     margin-right: 1rem;
   }
 
+  /* home */
   .home-card {
     display: flex;
     flex-direction: column;
@@ -324,6 +326,7 @@ iframe {
     min-width: 55vw !important;
   }
 
+  /* art */
   .art-title {
     padding: 1rem 1rem;
   }
@@ -348,6 +351,11 @@ iframe {
 
   span {
     line-height: 1rem;
+  }
+
+  /* blog */
+  .b-title-data {
+    padding: 2rem;
   }
 
   iframe {
