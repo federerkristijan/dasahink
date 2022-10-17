@@ -7,7 +7,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import artCard from "./artCard";
 import film from "./film";
 import blog from "./blog";
-import dominationCard from "./dominationCard";
+import domination from "./domination";
 import musicCard from "./musicCard";
 import youtube from "./youtube";
 import richText from "./richText";
@@ -25,7 +25,7 @@ export default createSchema({
     home,
     blog,
     musicCard,
-    dominationCard,
+    domination,
     film,
     artCard,
     youtube,

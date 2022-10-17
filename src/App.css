@@ -69,7 +69,8 @@ p {
 .home,
 .art,
 .film,
-.blog {
+.blog,
+.domination {
   padding: 1rem 3rem 1rem 3rem;
 }
 
@@ -113,7 +114,7 @@ p {
 
 .art-duo {
   display: flex;
-  max-width: 47%;
+  max-width: 48%;
   gap: 1rem;
   margin: 1rem 0;
 }
@@ -126,9 +127,9 @@ p {
 
 .art-trio {
   display: flex;
-  max-width: 30%;
+  max-width: 31%;
   height: auto;
-  gap: 1.8rem;
+  gap: 1rem;
   margin: 1rem 0;
 }
 
@@ -179,7 +180,6 @@ p {
 }
 
 /* Film */
-
 iframe {
   width: 80%;
   min-height: 75vh;
@@ -191,7 +191,6 @@ iframe {
   align-items: center;
   padding: 1rem 6rem;
 }
-
 
 .film-credits {
   display: flex;
@@ -218,17 +217,18 @@ iframe {
 }
 
 /* Domination */
-
 .subscribe-title {
   display: flex;
-  background: white;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
   float: right;
   overflow: visible;
-  bottom: 24rem;
+  bottom: 16rem;
+  width: 33vw;
+  border: 1px solid black;
+  background: rgba(187 180 180 / 87%);
 }
 
 .domination-cover-image > img {
@@ -284,7 +284,6 @@ iframe {
 }
 
 @media screen and (max-width: 720px) {
-
   /* wrappers */
   .App,
   .home,
@@ -294,6 +293,16 @@ iframe {
     padding: 1rem 0.5rem 1rem 0.5rem;
   }
 
+  /* footer */
+  .footer > .email {
+    margin-right: 3rem;
+  }
+
+  .footer > a {
+    margin-right: 1rem;
+  }
+
+  /* home */
   .home-card {
     display: flex;
     flex-direction: column;
@@ -315,9 +324,10 @@ iframe {
   }
 
   .form-control {
-    min-width: 55vw!important;
+    min-width: 55vw !important;
   }
 
+  /* art */
   .art-title {
     padding: 1rem 1rem;
   }
@@ -326,13 +336,32 @@ iframe {
     margin: 2rem 2rem;
   }
 
-  .duo-desc, .trio-desc {
+  .art-image {
+    padding: 1rem 1rem;
+  }
+
+  .art-trio {
+    max-width: 30%;
+  }
+
+  .duo-desc,
+  .trio-desc {
     text-align: center;
     padding: 1rem 1rem;
   }
 
   span {
     line-height: 1rem;
+  }
+
+  /* blog */
+  .b-title-data {
+    padding: 2rem;
+  }
+
+  /* domination */
+  .subscribe-title {
+    max-width: 60vw;
   }
 
   iframe {

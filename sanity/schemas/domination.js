@@ -1,19 +1,17 @@
-const dominationCard = {
-  name: "dominationCard",
-  title: "DominationCard",
+const domination = {
+  name: "domination",
+  title: "Domination",
   type: "document",
   fields: [
     {
       title: "Title",
       name: "title",
       type: "string",
-      validation: (Rule) => Rule.required(),
     },
     {
       title: "Description",
       name: "description",
-      type: "string",
-      validation: (Rule) => Rule.required(),
+      type: "text",
     },
     {
       title: "Image",
@@ -21,10 +19,9 @@ const dominationCard = {
       type: "image",
       options: {
         hotspot: true
-      },
-      validation: (Rule) => Rule.required(),
+      }
     }
   ],
 };
 
-export default dominationCard;
+export default domination;

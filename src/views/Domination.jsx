@@ -1,20 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-// import Blog from "./Blog";
+
+import { sanityClient } from "../lib/client";
+import imageUrlBuilder from "@sanity/image-url";
+
 
 const Domination = () => {
+  const [dom, setDom] = useState(false);
+
+  const builder = imageUrlBuilder(sanityClient);
+
+  function urlFor(source) {
+    return builder.image(source);
+  }
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "domination"] | order(_createdAt asc) {
+          title,
+          description,
+          image
+        }`
+      )
+      .then((data) => setDom(data))
+      .catch(console.error);
+  }, []);
+
   return (
     <div className="domination">
       <div className="domination-cover-image">
-        <img
-          src="https://images.squarespace-cdn.com/content/v1/5972489ff7e0ab52f5a63107/1584178415189-CF2R4FXLYH3C1XI2NR30/final-0434+crop.jpeg?format=750w"
-          alt="cover-pic"
-        />
+        <div className="cover-image">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5972489ff7e0ab52f5a63107/1584178415189-CF2R4FXLYH3C1XI2NR30/final-0434+crop.jpeg?format=750w"
+            alt="cover-pic"
+          />
+        </div>
         <div className="subscribe-title">
           <h1>Subscripe to my Kink mailing list</h1>
           <br />
-          <p>if you want to get informed about talks, writings, and events!</p>
+          <h3>if you want to get informed about talks, writings, and events!</h3>
         </div>
       </div>
       <div className="subscribe">
@@ -28,12 +54,15 @@ const Domination = () => {
           </Button>
         </Form>
       </div>
+      {dom && dom.map((item) => (<div className="domination-data" key={item.title}>
+
+      </div>))}
       <div className="domination-card">
         <div className="domination-card-image">
           <img src={require("../assets/images/dom/dom1.jpg")} alt="" />
         </div>
         <div className="domination-card-description">
-          <span>
+          <p>
             Since over seven years I've been working as a professional
             Dominatrix in the sex industry. This job have had a significant
             influence over my life.
@@ -53,12 +82,12 @@ const Domination = () => {
             <br />
             I've met a ton of creatives, colleagues, and performers who are also
             interested in sexuality and sensuality.{" "}
-          </span>
+          </p>
         </div>
       </div>
       <div className="domination-card">
         <div className="domination-card-description">
-          <span>
+          <p>
             Seemed to me like what we do in the sex industry is important.{" "}
             <br />
             I have met so many clients who have been carrying around a fantasy
@@ -73,7 +102,7 @@ const Domination = () => {
             The creativity that goes into role play, the delicate hand skills
             that are needed to touch another body in just the right way- I think
             these capabilities have a lot of value.{" "}
-          </span>
+          </p>
         </div>
         <div className="domination-card-image">
           <img src={require("../assets/images/dom/dom2.jpeg")} alt="" />
@@ -85,7 +114,7 @@ const Domination = () => {
           <img src={require("../assets/images/dom/dom3.jpg")} alt="" />
         </div>
         <div className="domination-card-description">
-          <span>
+          <p>
             This is a part of the reason I have decided to be 'out of the
             closet' about sex work. Talk openly about my experiences, answer
             questions, share what I know.
@@ -117,7 +146,7 @@ const Domination = () => {
             and feminists, and so I'm happy to contribute my share even just by
             writing these words. I dont think I will do this job forever, but it
             has given me so much that its the least I can do.
-          </span>
+          </p>
         </div>
       </div>
 
