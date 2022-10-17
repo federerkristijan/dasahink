@@ -220,14 +220,16 @@ iframe {
 
 .subscribe-title {
   display: flex;
-  background: white;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
   float: right;
   overflow: visible;
-  bottom: 24rem;
+  bottom: 16rem;
+  width: 33vw;
+  border: 1px solid black;
+  background: rgba(187, 180, 180, 0.545);
 }
 
 .domination-cover-image > img {
@@ -356,6 +358,11 @@ iframe {
   /* blog */
   .b-title-data {
     padding: 2rem;
+  }
+
+  /* domination */
+  .subscribe-title {
+    max-width: 60vw;
   }
 
   iframe {

@@ -7,14 +7,16 @@ const Domination = () => {
   return (
     <div className="domination">
       <div className="domination-cover-image">
-        <img
-          src="https://images.squarespace-cdn.com/content/v1/5972489ff7e0ab52f5a63107/1584178415189-CF2R4FXLYH3C1XI2NR30/final-0434+crop.jpeg?format=750w"
-          alt="cover-pic"
-        />
+        <div className="cover-image">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5972489ff7e0ab52f5a63107/1584178415189-CF2R4FXLYH3C1XI2NR30/final-0434+crop.jpeg?format=750w"
+            alt="cover-pic"
+          />
+        </div>
         <div className="subscribe-title">
           <h1>Subscripe to my Kink mailing list</h1>
           <br />
-          <p>if you want to get informed about talks, writings, and events!</p>
+          <h3>if you want to get informed about talks, writings, and events!</h3>
         </div>
       </div>
       <div className="subscribe">
