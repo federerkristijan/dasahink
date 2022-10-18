@@ -221,7 +221,7 @@ iframe {
 }
 
 /* Domination */
-.subscribe-title {
+.float-title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -246,7 +246,6 @@ iframe {
   align-items: center;
   flex-direction: row;
   margin: 2rem 0;
-  border: 1px solid red;
 }
 
 .domination-card-image {
@@ -365,8 +364,10 @@ iframe {
   }
 
   /* domination */
-  .subscribe-title {
-    max-width: 60vw;
+  .float-title {
+    transform: scale(0.7);
+    bottom: 13rem;
+    width: 38vw;
   }
 
   .domination-card {

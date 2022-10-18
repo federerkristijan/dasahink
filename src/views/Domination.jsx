@@ -36,7 +36,7 @@ const Domination = () => {
             alt="cover-pic"
           />
         </div>
-        <div className="subscribe-title">
+        <div className="float-title">
           <h1>Subscripe to my Kink mailing list</h1>
           <br />
           <h3>
