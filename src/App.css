@@ -375,6 +375,11 @@ iframe {
     display: contents;
   }
 
+  /* film */
+  .film-title {
+    padding: 2rem 2rem;
+  }
+
   /* music */
   .music-card {
     padding: 2rem 2rem;
