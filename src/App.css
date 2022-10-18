@@ -26,6 +26,10 @@ p {
   margin-top: 1rem;
 }
 
+li {
+  list-style: none;
+}
+
 /* Navbar */
 .App > .navbar {
   display: flex;
@@ -241,7 +245,8 @@ iframe {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  margin: 2rem 7rem;
+  margin: 2rem 0;
+  border: 1px solid red;
 }
 
 .domination-card-image {
@@ -362,6 +367,10 @@ iframe {
   /* domination */
   .subscribe-title {
     max-width: 60vw;
+  }
+
+  .domination-card {
+    display: contents;
   }
 
   iframe {

@@ -2,31 +2,30 @@ import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-import { sanityClient } from "../lib/client";
-import imageUrlBuilder from "@sanity/image-url";
-
+// import { sanityClient } from "../lib/client";
+// import imageUrlBuilder from "@sanity/image-url";
 
 const Domination = () => {
-  const [dom, setDom] = useState(false);
+  // const [dom, setDom] = useState(false);
 
-  const builder = imageUrlBuilder(sanityClient);
+  // const builder = imageUrlBuilder(sanityClient);
 
-  function urlFor(source) {
-    return builder.image(source);
-  }
+  // function urlFor(source) {
+  //   return builder.image(source);
+  // }
 
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "domination"] | order(_createdAt asc) {
-          title,
-          description,
-          image
-        }`
-      )
-      .then((data) => setDom(data))
-      .catch(console.error);
-  }, []);
+  // useEffect(() => {
+  //   sanityClient
+  //     .fetch(
+  //       `*[_type == "domination"] | order(_createdAt asc) {
+  //         title,
+  //         description,
+  //         image
+  //       }`
+  //     )
+  //     .then((data) => setDom(data))
+  //     .catch(console.error);
+  // }, []);
 
   return (
     <div className="domination">
@@ -40,7 +39,9 @@ const Domination = () => {
         <div className="subscribe-title">
           <h1>Subscripe to my Kink mailing list</h1>
           <br />
-          <h3>if you want to get informed about talks, writings, and events!</h3>
+          <h3>
+            if you want to get informed about talks, writings, and events!
+          </h3>
         </div>
       </div>
       <div className="subscribe">
@@ -54,9 +55,25 @@ const Domination = () => {
           </Button>
         </Form>
       </div>
-      {dom && dom.map((item) => (<div className="domination-data" key={item.title}>
-
-      </div>))}
+      {/* <div className="domination-data">
+        {dom &&
+          dom.map((item) => (
+            <ul key={item.title}>
+              <li>
+                <div className="domination-card">
+                  <div className="d-image">
+                    <img
+                      src={urlFor(item.image).width(400).url()}
+                      alt={item.title}
+                      className="domination-image"
+                    />
+                  </div>
+                  <div className="d-text"><p>{item.text}</p></div>
+                </div>
+              </li>
+            </ul>
+          ))}
+      </div> */}
       <div className="domination-card">
         <div className="domination-card-image">
           <img src={require("../assets/images/dom/dom1.jpg")} alt="" />
@@ -86,6 +103,9 @@ const Domination = () => {
         </div>
       </div>
       <div className="domination-card">
+        <div className="domination-card-image">
+          <img src={require("../assets/images/dom/dom2.jpeg")} alt="" />
+        </div>
         <div className="domination-card-description">
           <p>
             Seemed to me like what we do in the sex industry is important.{" "}
@@ -103,9 +123,6 @@ const Domination = () => {
             that are needed to touch another body in just the right way- I think
             these capabilities have a lot of value.{" "}
           </p>
-        </div>
-        <div className="domination-card-image">
-          <img src={require("../assets/images/dom/dom2.jpeg")} alt="" />
         </div>
       </div>
 
