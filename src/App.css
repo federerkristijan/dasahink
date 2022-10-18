@@ -375,6 +375,11 @@ iframe {
     display: contents;
   }
 
+  /* music */
+  .music-card {
+    padding: 2rem 2rem;
+  }
+
   iframe {
     width: 100%;
     min-height: 95%;

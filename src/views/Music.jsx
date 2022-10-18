@@ -6,9 +6,9 @@ const Music = () => {
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/EyzUAX4N5"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
         <div className="music-description">
@@ -27,36 +27,36 @@ const Music = () => {
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/56kPjUM5YiM"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/gcEqM7K8Dgg"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/XOfNiDJTE3Y"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/TCTh3zYss"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       <div className="music-description">
@@ -71,18 +71,18 @@ const Music = () => {
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/KIfIvRYlWi0"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/INBf163dzRM"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       <div className="music-description">
@@ -97,9 +97,9 @@ const Music = () => {
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/fgz3pvs-Utk"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       <div className="music-description">
@@ -120,9 +120,9 @@ const Music = () => {
       <div className="music-card">
         <iframe
           src="https://www.youtube.com/embed/edrDY5AG51M"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="video"
         />
       </div>
