@@ -3,6 +3,7 @@ import Insta from "../components/Insta";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import SubscribeForm from "../components/Subscribe";
 
 const Home = () => {
   return (
@@ -30,7 +31,7 @@ const Home = () => {
         </div>
       </div>
       <div className="subscribe">
-        <Form>
+        {/* <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
@@ -38,7 +39,8 @@ const Home = () => {
           <Button variant="primary" type="submit" className="btn">
             Subscribe to mailing list
           </Button>
-        </Form>
+        </Form> */}
+        <SubscribeForm />
       </div>
       <div className="home-insta">
         <Insta />
