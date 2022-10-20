@@ -14,6 +14,7 @@ import richText from "./richText";
 import topic from "./topic";
 import home from "./home";
 import image from "./image";
+import news from "./news";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,6 +32,7 @@ export default createSchema({
     youtube,
     richText,
     topic,
-    image
+    image,
+    news
   ]),
 });
