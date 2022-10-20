@@ -14,6 +14,16 @@ export default {
       title: 'News Text'
     },
     {
+      name: 'newsAbout',
+      title: 'News About',
+      type: 'text'
+    },
+    {
+      name: 'newsFacilitator',
+      title: 'News Facilitator',
+      type: 'text'
+    },
+    {
       name: 'newsImage',
       type: 'image',
       title: 'News Image',
@@ -22,7 +32,7 @@ export default {
       }
     },
     {
-      name: 'newshref',
+      name: 'newsHref',
       type: 'url',
       title: 'News Link'
     }
