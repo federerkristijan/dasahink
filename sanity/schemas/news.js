@@ -22,7 +22,7 @@ export default {
       }
     },
     {
-      name: 'newshref',
+      name: 'newsHref',
       type: 'url',
       title: 'News Link'
     }
