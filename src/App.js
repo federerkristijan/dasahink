@@ -12,6 +12,7 @@ import Blog from "./views/Blog";
 import Domination from "./views/Domination";
 import Film from "./views/Film";
 import Music from "./views/Music";
+import News from "./views/News";
 import NotFound from "./NotFound";
 
 // import "./App.css";
@@ -31,6 +32,7 @@ function App() {
               <Route path="art" element={<Art />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/domination" element={<Domination />} />
+              <Route path="/news" element={<News />} />
               <Route path="/film" element={<Film />} />
               <Route path="/music" element={<Music />} />
               <Route element={NotFound} />

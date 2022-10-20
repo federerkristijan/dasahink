@@ -19,6 +19,7 @@ function BasicExample() {
             <Nav.Link href="/domination">Domination</Nav.Link>
             <Nav.Link href="/film">Film</Nav.Link>
             <Nav.Link href="/music">Music</Nav.Link>
+            <Nav.Link href="/news">News</Nav.Link>
             {/* <NavDropdown
               title="Members Area"
               className="dropdown"
