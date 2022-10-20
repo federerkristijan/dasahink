@@ -18,6 +18,8 @@ const News = () => {
         `*[_type == "news"] | order(_createdAt asc) {
           newsTitle,
           newsText,
+          newsAbout,
+          newsFavilitator,
           newsImage,
           newsHref
         }`
