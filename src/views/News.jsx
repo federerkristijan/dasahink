@@ -30,30 +30,34 @@ const News = () => {
 
   return (
     <div className="news">
-      {news &&
-        news.map((item) => (
-          <div className="news-data" key={item.newsTitle}>
-            <a href={item.newsHref}>
-              <div className="news-card">
-                <div className="news-image">
-                  <img
-                    src={urlFor(item.newsImage).width(400).url()}
-                    alt={item.newsTitle}
-                    className="news-image"
-                  />
-                </div>
-                <div className="news-text">
-                  <div className="news-title">
-                    <h1>{item.newsTitle}</h1>
+      <ul>
+        {news &&
+          news.map((item) => (
+            <li className="news-data" key={item.newsTitle}>
+              <a href={item.newsHref}>
+                <div className="news-card">
+                  <div className="news-image">
+                    <img
+                      src={urlFor(item.newsImage).width(400).url()}
+                      alt={item.newsTitle}
+                      className="news-image"
+                    />
                   </div>
                   <div className="news-text">
-                    <span>{item.newsText}</span>
+                    <div className="news-title">
+                      <h1>{item.newsTitle}</h1>
+                    </div>
+                    <div className="news-text">
+                      <span>{item.newsText}</span>
+                      <span>{item.newsAbout}</span>
+                      <span>{item.newsFacilitator}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        ))}
+              </a>
+            </li>
+          ))}
+      </ul>
     </div>
   );
 };
