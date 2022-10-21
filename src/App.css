@@ -151,27 +151,22 @@ li {
 /* Subscribre */
 .subscribe {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 5rem 0;
   max-width: 40vw;
 }
 
-.mb-3 {
-  width: 30vw;
+.subscribe > button {
+  margin-top: 2rem!important;
+  min-width: 20vw!important;
 }
 
 /* Home - Insta */
 .home .home-insta {
   height: 40vh;
   width: 100%;
-  border: 1px solid green;
-}
-
-.insta-card {
-  display: flex;
-
-  border: 3px solid yellow;
 }
 
 /* Column cards */
