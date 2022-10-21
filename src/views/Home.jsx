@@ -1,8 +1,5 @@
 import React from "react";
 import Insta from "../components/Insta";
-
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 import SubscribeForm from "../components/Subscribe";
 
 const Home = () => {
@@ -21,25 +18,18 @@ const Home = () => {
           </div>
           <div className="home-description">
             <span>
-              So nice of you to come for a visit.
-              This is the home of Dasa Hink, an artist, a film maker, a musician and a public activist. I've collected some art and writing for you to enjoy,
-              plus some more info about me and some stuff im up to. Please do
-              follow me on instagram or register for the mailing list to get
-              info about concerts, BDSM tours, or other shenanigans I'm up to.
+              So nice of you to come for a visit. This is the home of Dasa Hink,
+              an artist, a film maker, a musician and a public activist. I've
+              collected some art and writing for you to enjoy, plus some more
+              info about me and some stuff im up to. Please do follow me on
+              instagram or register for the mailing list to get info about
+              concerts, BDSM tours, or other shenanigans I'm up to.
             </span>
           </div>
         </div>
       </div>
       <div className="subscribe">
-        {/* <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-          </Form.Group>
-          <Button variant="primary" type="submit" className="btn">
-            Subscribe to mailing list
-          </Button>
-        </Form> */}
+        <p>Sign up with your email to subscribe!</p>
         <SubscribeForm />
       </div>
       <div className="home-insta">

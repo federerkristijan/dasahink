@@ -4,23 +4,34 @@ import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 // credits to https://github.com/revolunet/react-mailchimp-subscribe
 
-// simplest form (only email)
-const SimpleForm = () => <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_APP}/>
+// const SubscribeForm = () => {
+//   return (
+//     <div className="sub-form">
+//       <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} className="mailchimp" style={{ display: "flex", minWidth: "20vw"}}/>
+//     </div>
+//   )
+// }
 
-// use the render prop and your custom form
-const SubscribeForm = () => (
-  <MailchimpSubscribe
-    url={process.env.REACT_APP_MAILCHIMP_APP}
-    render={({ subscribe, status, message }) => (
-      <div>
-        <SimpleForm onSubmitted={formData => subscribe(formData)} />
-        {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-        {status === "error" && <div style={{ color: "red" }} dangerouslySetInnerHTML={{__html: message}}/>}
-        {status === "success" && <div style={{ color: "green" }}>Subscribed !</div>}
-      </div>
-    )}
-  />
-)
+const SubscribeForm = ({ status, message, onValidated }) => {
+  let email;
+  const submit = () =>
+    email &&
+    email.value.indexOf("@") > -1 &&
+    onValidated({
+      EMAIL: email.value,
+    });
 
+  return (
+    <div className="customForm">
+      <input className="customInput"
+        ref={node => (email = node)}
+        type="email"
+      />
+      <button className="customButton" onClick={submit}>
+        Subscribe
+      </button>
+    </div>
+  );
+};
 
 export default SubscribeForm
