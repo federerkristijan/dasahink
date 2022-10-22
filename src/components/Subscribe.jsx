@@ -17,7 +17,7 @@ const SubscribeForm = () => {
     <>
       <div className="subscribeForm">
         <form
-          action="https://dasahink.us7.list-manage.com/subscribe/post"
+          action={process.env.REACT_APP_MAILCHIMP_URL}
           method="POST"
           data-form-type="identity,newsletter"
         >
@@ -26,34 +26,35 @@ const SubscribeForm = () => {
           <input type="hidden" name="id" value="39f79eca81" />
 
           {/* email */}
-          {/* <input type="email" name="b_email" tabindex="-1" value="" placeholder="youremail@gmail.com" id="b_email" /> */}
+          {/* <input
+            type="email"
+            name="33adc5afe6f7f43ff37d3ad0b"
+            tabIndex="-1"
+            placeholder="youremail@gmail.com"
+            id="39f79eca81"
+          /> */}
 
           {/* merge */}
           <input
             type="email"
-            autocapitalize="off"
-            autocorrect="off"
             name="33adc5afe6f7f43ff37d3ad0b"
             id="39f79eca81"
             size="25"
-            value=""
+            defaultValue=""
             data-kwimpalastatus="alive"
             data-kwimpalaid="1666363758386-0"
             data-form-type="email"
           ></input>
         </form>
-        <div class="submit_container clear">
+        <div className="submit_container clear">
           <input
             type="submit"
-            class="formEmailButton"
+            className="formEmailButton"
             name="submit"
             value="Subscribe"
             data-form-type="action,subscribe"
           />
         </div>
-        {/* <button className="customButton" onClick={submit}>
-        Subscribe
-      </button> */}
       </div>
     </>
   );
