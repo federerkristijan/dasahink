@@ -166,7 +166,7 @@ li {
   color: white;
   padding: 0.5rem;
   border: 1px solid grey;
-  box-shadow: 2px 1px ;
+  /* box-shadow: 1px 1px rgba(80, 80, 250, 0.638); */
 }
 
 /* Home - Insta */
