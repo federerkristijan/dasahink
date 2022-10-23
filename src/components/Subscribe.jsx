@@ -1,8 +1,7 @@
 import React from "react";
 
-import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-// credits to https://github.com/revolunet/react-mailchimp-subscribe
+// credits to https://github.com/gndx/react-mailchimp-form
 
 // const SubscribeForm = () => {
 //   return (
