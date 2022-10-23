@@ -2,7 +2,6 @@ import React from "react";
 
 const SubscribeForm = () => {
   return (
-    <>
       <div className="subscribeForm">
         <form
           action={process.env.REACT_APP_MAILCHIMP_URL}
@@ -23,6 +22,7 @@ const SubscribeForm = () => {
             data-kwimpalastatus="alive"
             data-kwimpalaid="1666363758386-0"
             data-form-type="email"
+            className="subscribeEmail"
           ></input>
 
           <div className="submit_container clear">
@@ -36,7 +36,6 @@ const SubscribeForm = () => {
           </div>
         </form>
       </div>
-    </>
   );
 };
 
