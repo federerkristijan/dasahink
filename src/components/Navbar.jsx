@@ -20,6 +20,7 @@ function BasicExample() {
             <Nav.Link href="/film">Film</Nav.Link>
             <Nav.Link href="/music">Music</Nav.Link>
             <Nav.Link href="/news">News</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
             {/* <NavDropdown
               title="Members Area"
               className="dropdown"
