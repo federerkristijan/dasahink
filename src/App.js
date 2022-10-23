@@ -13,6 +13,7 @@ import Domination from "./views/Domination";
 import Film from "./views/Film";
 import Music from "./views/Music";
 import News from "./views/News";
+import Contact from "./views/Contact";
 import NotFound from "./NotFound";
 
 // import "./App.css";
@@ -35,6 +36,7 @@ function App() {
               <Route path="/news" element={<News />} />
               <Route path="/film" element={<Film />} />
               <Route path="/music" element={<Music />} />
+              <Route path="/contact" element={<Contact />} />
               <Route element={NotFound} />
           </Route>
         </Routes>

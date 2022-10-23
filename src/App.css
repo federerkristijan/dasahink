@@ -75,7 +75,8 @@ li {
 .film,
 .blog,
 .domination,
-.news {
+.news,
+.contact {
   padding: 1rem 3rem 1rem 3rem;
 }
 
@@ -150,17 +151,22 @@ li {
 
 /* Subscribre */
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0;
-  max-width: 40vw;
+  margin: 2rem 2rem 2rem 1rem;
 }
 
-.subscribe > button {
-  margin-top: 2rem!important;
-  min-width: 20vw!important;
+.subscribeEmail {
+  margin: 0.4rem 0;
+}
+
+.subscribeButton {
+  margin-top: 1.5rem;
+  min-width: 20vw;
+  border-radius: 5px;
+  background: #1976d2;
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  /* box-shadow: 1px 1px rgba(80, 80, 250, 0.638); */
 }
 
 /* Home - Insta */
@@ -296,6 +302,11 @@ iframe {
   border-radius: 10%;
   box-shadow: 3px 2px 2px rgb(16, 16, 16);
   transform: scale(0.7);
+}
+
+/* contact */
+.form-group {
+  margin: 1rem 0 1rem 0;
 }
 
 @media screen and (max-width: 720px) {
