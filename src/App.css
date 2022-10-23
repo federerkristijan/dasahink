@@ -151,7 +151,7 @@ li {
 
 /* Subscribre */
 .subscribe {
-  margin: 2rem 2rem 2rem 1rem;
+  margin: 6rem 2rem 2rem 1rem;
 }
 
 .subscribeEmail {
@@ -333,6 +333,7 @@ iframe {
     display: flex;
     flex-direction: column;
     padding: 0;
+    /* margin-bottom: 3rem; */
   }
 
   .home-text {
@@ -352,6 +353,11 @@ iframe {
   .home-description {
     padding: 1rem;
   }
+
+  .subscribe {
+    margin: 4rem 2rem 2rem 1rem;
+  }
+
 
   .form-control {
     min-width: 55vw !important;
