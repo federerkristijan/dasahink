@@ -16,8 +16,6 @@ import News from "./views/News";
 import Contact from "./views/Contact";
 import NotFound from "./NotFound";
 
-// import "./App.css";
-
 import "./App.css";
 
 function App() {
