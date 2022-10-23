@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { sanityClient } from "../lib/client";
+import React from "react";
+// import { sanityClient } from "../lib/client";
 // import YouTubePreview from "../../sanity/schemas/youtube";
 // import getYouTubeID from "get-youtube-id";
 
@@ -24,19 +24,19 @@ import { sanityClient } from "../lib/client";
 // };
 
 const Film = () => {
-  const [film, setFilm] = useState(false);
+  // const [film, setFilm] = useState(false);
 
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "film"] | order(_createdAt asc) {
-          title,
-          richText
-        }`
-      )
-      .then((data) => setFilm(data))
-      .catch(console.error);
-  }, []);
+  // useEffect(() => {
+  //   sanityClient
+  //     .fetch(
+  //       `*[_type == "film"] | order(_createdAt asc) {
+  //         title,
+  //         richText
+  //       }`
+  //     )
+  //     .then((data) => setFilm(data))
+  //     .catch(console.error);
+  // }, []);
 
   return (
     <div className="film">

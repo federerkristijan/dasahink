@@ -158,7 +158,13 @@ li {
   max-width: 40vw;
 }
 
-.subscribe > button {
+.subscribe > Mailchimp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buttonClassName {
   margin-top: 2rem!important;
   min-width: 20vw!important;
 }

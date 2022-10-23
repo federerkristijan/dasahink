@@ -1,7 +1,8 @@
 import React from "react";
 
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-// credits to https://github.com/gndx/react-mailchimp-form
+// credits to https://github.com/revolunet/react-mailchimp-subscribe
 
 // const SubscribeForm = () => {
 //   return (
@@ -36,7 +37,7 @@ const SubscribeForm = () => {
           {/* merge */}
           <input
             type="email"
-            name="33adc5afe6f7f43ff37d3ad0b"
+            name="email"
             id="39f79eca81"
             size="25"
             defaultValue=""
