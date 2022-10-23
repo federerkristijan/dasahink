@@ -27,12 +27,11 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-title">
-        <h1>Want to work with me?</h1>
+        <h1>Contact me</h1>
       </div>
       <div className="form">
         <form ref={form} onSubmit={sendEmail}>
           <div className="form-group">
-            <label for="name">Your name</label>
             <input
               type="text"
               className="form-control"
@@ -42,7 +41,6 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label for="email">Your email</label>
             <input
               type="email"
               className="form-control"
@@ -52,13 +50,12 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label for="message">Your message</label>
             <textarea
               className="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
               name="message"
-              placeholder="Your message to me"
+              placeholder="Your message"
             ></textarea>
           </div>
           <div className="button">
