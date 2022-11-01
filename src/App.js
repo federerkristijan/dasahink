@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route , Outlet} from "react-router-dom";
 import ReactGA from 'react-ga';
@@ -17,10 +17,15 @@ import Contact from "./views/Contact";
 import NotFound from "./NotFound";
 import "./App.css";
 
-ReactGA.initialize('340259852');
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.initialize(process.env.REACT_APP_GA_MEASURMENT_ID);
+
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
+
   return (
     <BrowserRouter>
       <header>
