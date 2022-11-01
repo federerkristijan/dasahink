@@ -5,7 +5,7 @@ const Music = () => {
     <div className="music">
       <div className="music-card">
         <iframe
-          src="https://www.youtube.com/embed/EyzUAX4N5"
+          src="https://www.youtube.com/embed/EyzUAX4N5mg"
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen
