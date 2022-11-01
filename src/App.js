@@ -1,7 +1,7 @@
-  import * as React from "react";
-// import { useEffect, useState } from "react";
+import * as React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route , Outlet} from "react-router-dom";
+import ReactGA from 'react-ga';
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -15,8 +15,10 @@ import Music from "./views/Music";
 import News from "./views/News";
 import Contact from "./views/Contact";
 import NotFound from "./NotFound";
-
 import "./App.css";
+
+ReactGA.initialize('340259852');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (
