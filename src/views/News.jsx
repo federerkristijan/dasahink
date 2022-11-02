@@ -45,7 +45,7 @@ const News = () => {
                   </div>
                   <div className="news-text">
                     <div className="news-title">
-                      <h1>{item.newsTitle}</h1>
+                      <h2>{item.newsTitle}</h2>
                     </div>
                     <div className="news-description">
                       <span>{item.newsText}</span>
