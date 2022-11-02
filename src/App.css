@@ -293,22 +293,22 @@ iframe {
 /* news */
 .news-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 3rem;
   padding: 2rem 2rem;
   border: 1px solid black;
-  border-radius: 10%;
-  box-shadow: 3px 2px 2px rgb(16, 16, 16);
-  transform: scale(0.7);
+  border-radius: 10px;
+  box-shadow: 2px 1px 1px rgb(16, 16, 16);
+  transform: scale(0.9);
 }
 
 .news-text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100vw;
+  width: 60vw;
 }
 
 /* contact */
