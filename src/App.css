@@ -304,7 +304,18 @@ iframe {
   transform: scale(0.9);
 }
 
-.news-text {
+/* .news-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 60vw;
+} */
+
+.news-title > h1 {
+  white-space: wrap;
+}
+
+.news-description {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
