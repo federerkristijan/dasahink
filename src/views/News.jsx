@@ -40,14 +40,15 @@ const News = () => {
                     <img
                       src={urlFor(item.newsImage).width(400).url()}
                       alt={item.newsTitle}
+                      style={{ borderRadius: "5px"}}
                       className="news-image"
                     />
                   </div>
                   <div className="news-text">
                     <div className="news-title">
-                      <h1>{item.newsTitle}</h1>
+                      <h2>{item.newsTitle}</h2>
                     </div>
-                    <div className="news-text">
+                    <div className="news-description">
                       <span>{item.newsText}</span>
                       <span>{item.newsAbout}</span>
                       <span>{item.newsFacilitator}</span>
