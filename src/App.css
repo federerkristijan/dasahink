@@ -304,6 +304,13 @@ iframe {
   transform: scale(0.7);
 }
 
+.news-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100vw;
+}
+
 /* contact */
 .form-group {
   margin: 1rem 0 1rem 0;
