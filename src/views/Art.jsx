@@ -63,8 +63,8 @@ const Art = () => {
             <img src={require("../assets/images/art/art5b.jpg")} alt="" />
           </div>
           <div className="art-duo">
-            <img src={require("../assets/images/art/art6a.jpg")} alt="" />
             <img src={require("../assets/images/art/art6b.jpg")} alt="" />
+            <img src={require("../assets/images/art/art6a.jpg")} alt="" />
           </div>
           <div className="duo-desc">
             <span>
@@ -112,7 +112,7 @@ const Art = () => {
             min-width={"40vw"}
           />
         </div>
-        <div className="art-image">
+        <div className="art-solo">
           <img
             src={require("../assets/images/art/art18.jpg")}
             alt=""
