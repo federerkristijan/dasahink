@@ -119,14 +119,16 @@ li {
   padding: 1rem 2rem;
 }
 
-.art-image > .art-duo > img {
-  max-width: 30vw;
-  max-height: auto;
+.art-solo {
+  display: flex;
+  justify-content: center;
 }
 
 .art-duo {
   display: flex;
+  align-items: center;
   max-width: 48%;
+  height: auto;
   gap: 1rem;
   margin: 1rem 0;
 }

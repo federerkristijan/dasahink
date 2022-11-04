@@ -112,7 +112,7 @@ const Art = () => {
             min-width={"40vw"}
           />
         </div>
-        <div className="art-image">
+        <div className="art-solo">
           <img
             src={require("../assets/images/art/art18.jpg")}
             alt=""
