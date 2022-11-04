@@ -119,6 +119,11 @@ li {
   padding: 1rem 2rem;
 }
 
+.art-image > .art-duo > img {
+  max-width: 30vw;
+  max-height: auto;
+}
+
 .art-duo {
   display: flex;
   max-width: 48%;
