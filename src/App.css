@@ -449,4 +449,9 @@ iframe {
     width: 100%;
     min-height: 95%;
   }
+
+  /* contact */
+.form-group {
+  max-width: 70vw;
+}
 }
