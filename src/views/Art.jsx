@@ -64,7 +64,7 @@ const Art = () => {
           </div>
           <div className="art-duo">
             <img src={require("../assets/images/art/art6a.jpg")} alt="" />
-            <img src={require("../assets/images/art/art6b.jpg")} alt="" />
+            <img src={require("../assets/images/art/art6b.jpg")} alt="6b" />
           </div>
           <div className="duo-desc">
             <span>
