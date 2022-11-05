@@ -174,7 +174,6 @@ li {
   color: white;
   padding: 0.5rem;
   border: 1px solid grey;
-  /* box-shadow: 1px 1px rgba(80, 80, 250, 0.638); */
 }
 
 /* Home - Insta */
@@ -264,6 +263,20 @@ iframe {
 
 .domination-card-description {
   padding: 1.5rem;
+}
+
+.dom-subscribe {
+  padding: 1rem;
+}
+
+.dom-button {
+  margin-top: 1.5rem;
+  min-width: 10vw;
+  border-radius: 5px;
+  background: #1976d2;
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid grey;
 }
 
 .bdsm {
@@ -433,6 +446,31 @@ iframe {
 
   .domination-card {
     display: contents;
+  }
+
+  .dom-subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    padding: 1rem;
+  }
+
+  .mb-3 {
+    min-width: 60vw;
+  }
+
+  .form-label {
+    margin-bottom: 1.5rem;
+  }
+
+  .dom-button {
+    min-width: 55vw;
+    height: 6.5vh;
+    border-radius: 5px;
+    background: #1976d2;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid grey;
   }
 
   /* film */

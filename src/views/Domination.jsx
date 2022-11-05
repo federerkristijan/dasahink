@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 
 // import { sanityClient } from "../lib/client";
 // import imageUrlBuilder from "@sanity/image-url";
@@ -44,15 +44,15 @@ const Domination = () => {
           </h3>
         </div>
       </div>
-      <div className="subscribe">
+      <div className="dom-subscribe">
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <button variant="primary" type="submit" className="dom-button">
             Subscribe to mailing list
-          </Button>
+          </button>
         </Form>
       </div>
       {/* <div className="domination-data">
