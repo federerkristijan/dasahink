@@ -6,7 +6,7 @@ import "react-ig-feed/dist/index.css";
 const Insta = () => {
   return (
     <InstagramFeed
-      token= {process.env.REACT_APP_INSTA_ACCESS_TOKEN_DEV}
+      token= {process.env.REACT_APP_INSTA_ACCESS_TOKEN}
       counter="36"
     />
   );
