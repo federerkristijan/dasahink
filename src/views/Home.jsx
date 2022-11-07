@@ -1,5 +1,5 @@
 import React from "react";
-// import Insta from "../components/Insta";
+import Insta from "../components/Insta";
 import SubscribeForm from "../components/Subscribe";
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
         <SubscribeForm />
       </div>
       <div className="home-insta">
-        {/* <Insta /> */}
+        <Insta />
       </div>
     </div>
   );

@@ -9,6 +9,11 @@ const Insta = () => {
       token= {process.env.REACT_APP_INSTA_ACCESS_TOKEN}
       counter="36"
     />
+
+  //   <InstagramFeed
+  //   token= {process.env.REACT_APP_INSTA_ACCESS_TOKEN_DEV}
+  //   counter="36"
+  // />
   );
 };
 
