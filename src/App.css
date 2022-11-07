@@ -89,6 +89,7 @@ li {
   flex-direction: row;
   height: 85vh;
   padding: 1rem 5rem;
+  margin-top: 2rem;
 }
 
 /* Home */
