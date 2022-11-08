@@ -33,7 +33,7 @@ const Home = () => {
         <SubscribeForm />
       </div>
       <div className="home-insta">
-        <Insta />
+        {/* <Insta /> */}
       </div>
     </div>
   );
