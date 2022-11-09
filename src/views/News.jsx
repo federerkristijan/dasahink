@@ -38,7 +38,7 @@ const News = () => {
                 <div className="news-card">
                   <div className="news-image">
                     <img
-                      src={urlFor(item.newsImage).width(200).url()}
+                      src={urlFor(item.newsImage).width(180).url()}
                       alt={item.newsTitle}
                       style={{ borderRadius: "5px"}}
                       className="news-image"
