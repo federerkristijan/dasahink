@@ -47,7 +47,6 @@ function App() {
           </Route>
         </Routes>
         <CookieConsent
-          debug={true}
           enableDeclineButton
           onDecline={() => {
             alert("nay!");
