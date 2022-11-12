@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route, Outlet } from "react-router-dom";
+//  credtis to https://github.com/react-ga/react-ga
 import ReactGA from "react-ga";
+// credits to https://github.com/Mastermindzh/react-cookie-consent
 import CookieConsent from "react-cookie-consent";
 
 import Navbar from "./components/Navbar";
