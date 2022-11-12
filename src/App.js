@@ -47,6 +47,7 @@ function App() {
           </Route>
         </Routes>
         <CookieConsent
+          debug={true}
           enableDeclineButton
           onDecline={() => {
             alert("nay!");
@@ -55,8 +56,8 @@ function App() {
           flipButtons={true}
           style={{ textAlign: "center", background: "grey" }}
           overlay={true}
-          buttonStyle={{ borderRadius: "7px" }}
-          declineButtonStyle={{ borderRadius: "7px" }}
+          buttonStyle={{ borderRadius: "7px", background: "rgb(214, 184, 158)" }}
+          declineButtonStyle={{ borderRadius: "7px", background: "rgb(54, 42, 51)" }}
         >
           🍪 This site uses cookies. 🍪
         </CookieConsent>
