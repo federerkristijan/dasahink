@@ -46,7 +46,7 @@ function App() {
               <Route element={NotFound} />
           </Route>
         </Routes>
-        <CookieConsent debug={true}>🍪 This site uses cookies. 🍪</CookieConsent>
+        <CookieConsent debug={true}  enableDeclineButton onDecline={() => { alert("nay!") }} style={{ textAlign: "center" }}>🍪 This site uses cookies. 🍪</CookieConsent>
       </main>
       <footer className="footer">
         <Footer />
