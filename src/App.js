@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route , Outlet} from "react-router-dom";
 import ReactGA from 'react-ga';
+import CookieConsent from "react-cookie-consent";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -45,6 +46,7 @@ function App() {
               <Route element={NotFound} />
           </Route>
         </Routes>
+        <CookieConsent debug={true}>🍪 This site uses cookies. 🍪</CookieConsent>
       </main>
       <footer className="footer">
         <Footer />
