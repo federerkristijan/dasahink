@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Routes, Route , Outlet} from "react-router-dom";
-import ReactGA from 'react-ga';
+import { Routes, Route, Outlet } from "react-router-dom";
+import ReactGA from "react-ga";
 import CookieConsent from "react-cookie-consent";
 
 import Navbar from "./components/Navbar";
@@ -20,12 +20,10 @@ import "./App.css";
 
 ReactGA.initialize(process.env.REACT_APP_GA_MEASURMENT_ID);
 
-
 function App() {
-
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
-  }, [])
+  }, []);
 
   return (
     <BrowserRouter>
@@ -34,19 +32,33 @@ function App() {
       </header>
       <main className="App">
         <Routes>
-            <Route path="/" element={<Layout />} >
-              <Route path="/" element={<Home />} />
-              <Route path="art" element={<Art />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/domination" element={<Domination />} />
-              <Route path="/news" element={<News />} />
-              <Route path="/film" element={<Film />} />
-              <Route path="/music" element={<Music />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route element={NotFound} />
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="art" element={<Art />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/domination" element={<Domination />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/film" element={<Film />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route element={NotFound} />
           </Route>
         </Routes>
-        <CookieConsent debug={true}  enableDeclineButton onDecline={() => { alert("nay!") }} style={{ textAlign: "center" }}>🍪 This site uses cookies. 🍪</CookieConsent>
+        <CookieConsent
+          debug={true}
+          enableDeclineButton
+          onDecline={() => {
+            alert("nay!");
+          }}
+          setDeclineCookie={true}
+          flipButtons={true}
+          style={{ textAlign: "center", background: "grey" }}
+          overlay={true}
+          buttonStyle={{ borderRadius: "7px" }}
+          declineButtonStyle={{ borderRadius: "7px" }}
+        >
+          🍪 This site uses cookies. 🍪
+        </CookieConsent>
       </main>
       <footer className="footer">
         <Footer />
@@ -57,9 +69,7 @@ function App() {
   function Layout() {
     return (
       <>
-        {/* <Navbar /> */}
         <Outlet />
-        {/* <Footer /> */}
       </>
     );
   }
