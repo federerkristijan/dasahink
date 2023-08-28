@@ -19,7 +19,7 @@ const Home = () => {
           <div className="home-description">
             <span>
               So nice of you to come for a visit. This is the home of Dasa Hink,
-              an artist, a film maker, a musician and a public activist. I've
+              an artist, a film maker and musician. I've
               collected some art and writing for you to enjoy, plus some more
               info about me and some stuff im up to. Please do follow me on
               instagram or register for the mailing list to get info about
